@@ -1,0 +1,110 @@
+/* ==UserStyle==
+@name        Discord Inspired Bits Dark
+@namespace   Style-it Themes
+@version     1.0.0
+@homepageURL https://github.com/style-it-themes/discord-inspired-bits-dark
+@updateURL   https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark
+@license     CC-BY-SA-4.0
+@author      Style-it Themes by: the-j0k3r
+==/UserStyle== */
+@-moz-document domain("discordapp.com") {
+	:root {
+		--color-eeeeee: #eee;
+		--color-6d6d6d: #6d6d6d;
+		--color-98aab6: #98aab6;
+		--color-35393e: #35393e;
+		--color-36393f: #36393f;
+		--color-2f3136: #2f3136;
+		--color-202225: #202225;
+		--color-7289da: #7289da;
+		--color-hover: rgba(192, 192, 192, .35);
+		--color-select: hsla(0, 0%, 25%, .6);
+	}
+	.pad-29zQak {
+		outline: 1px solid var(--color-2f3136) !important;
+	}
+	.theme-dark .textArea-2Spzkt::placeholder {
+		color: var(--color-eeeeee) !important;
+		opacity: .7 !important;
+	}
+	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
+		background-color: var(--color-2f3136) !important;
+	}
+	.emojiPicker-3m1S-j .search-bar-icon .icon {
+		filter: invert(1) !important;
+	}
+	.search-bar-inner input {
+		color: var(--color-eeeeee) !important;
+	}
+	.emojiPicker-3m1S-j .category-2U57w6 {
+		color: var(--color-98aab6) !important;
+		background: var(--color-2f3136) !important;
+	}
+	.search-bar-light .search-bar-icon .icon.icon-search-bar-clear {
+		filter: invert(1) brightness(120%) !important;
+	}
+	.diversitySelector-tmmMv0 .popout-2nUePc {
+		background: var(--color-2f3136) !important;
+		border: 1px solid var(--color-98aab6) !important;
+	}
+	.emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {
+		background-color: var(--color-select) !important;
+	}
+	.diversitySelector-tmmMv0 .popout-2nUePc .item-16cXuq:hover {
+		background-color: var(--color-hover) !important;
+	}
+	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA {
+		background: var(--color-2f3136) !important;
+	}
+	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
+		background: var(--color-6d6d6d) !important;
+	}
+	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
+	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
+	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
+	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
+	.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL,
+	.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL .pad-29zQak {
+		background-color: var(--color-2f3136) !important;
+	}
+	.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G,
+	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G,
+	.theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G {
+		background-color: var(--color-36393f) !important;
+	}
+	.form-deprecated .control-group input[type="email"],
+	.form-deprecated .control-group input[type="number"],
+	.form-deprecated .control-group input[type="password"],
+	.form-deprecated .control-group input[type="text"],
+	.form-deprecated .control-group textarea,
+	.form.deprecated .control-group input[type="email"],
+	.form.deprecated .control-group input[type="number"],
+	.form.deprecated .control-group input[type="password"],
+	.form.deprecated .control-group input[type="text"],
+	.form.deprecated .control-group textarea {
+		color: var(--color-98aab6) !important;
+		background: var(--color-2f3136) !important;
+		border-radius: 50px !important;
+		border-bottom: 1px solid var(--color-98aab6) !important;
+	}
+	.need-help-modal.deprecated .footer {
+		background-color: var(--color-35393e) !important;
+		border-top: 1px solid var(--color-7289da) !important;
+		color: var(--color-98aab6) !important;
+	}
+	.form-deprecated .form-inner, .form.deprecated .form-inner {
+		background-color: var(--color-35393e) !important;
+	}
+	.theme-dark .backdrop-1wrmKB {
+		background-color: var(--color-202225) !important;
+	}
+	.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 {
+		border: 1px solid var(--color-98aab6) !important;
+	}
+	.create-guild-container.deprecated .action {
+		background: var(--color-202225) !important;
+	}
+	.create-guild-container.deprecated {
+		background-color: var(--color-7289da) !important;
+	}
+}
