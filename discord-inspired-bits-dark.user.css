@@ -30,6 +30,12 @@
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
 	}
+	.search-bar.search-bar-light .search-bar-inner {
+		background-color: var(--color-36393f) !important;
+	}
+	.search-bar.search-bar-light input::placeholder {
+		color: var(--color-hover) !important;
+	}
 	.emojiPicker-3m1S-j .search-bar-icon .icon {
 		filter: invert(1) !important;
 	}
