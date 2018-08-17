@@ -16,6 +16,7 @@
 		--color-36393f: #36393f;
 		--color-2f3136: #2f3136;
 		--color-202225: #202225;
+		--color-4a4d53: #4a4d53;
 		--color-7289da: #7289da;
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0%, 25%, .6);
@@ -25,19 +26,23 @@
 	}
 	.theme-dark .textArea-2Spzkt::placeholder {
 		color: var(--color-eeeeee) !important;
-		opacity: .7 !important;
+		opacity: .4 !important;
 	}
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
 	}
-	.search-bar.search-bar-light .search-bar-inner {
-		background-color: var(--color-36393f) !important;
-	}
-	.search-bar.search-bar-light input::placeholder {
-		color: var(--color-hover) !important;
-	}
 	.emojiPicker-3m1S-j .search-bar-icon .icon {
 		filter: invert(1) !important;
+	}
+	.search-bar.search-bar-light .search-bar-inner {
+		background-color: var(--color-4a4d53) !important;
+	}
+	.search-bar.search-bar-light input::placeholder {
+		color: var(--color-eeeeee) !important;
+		opacity: .3 !important;
+	}
+	.search-bar-light .search-bar-icon .icon.icon-search-bar-clear {
+		filter: invert(1) brightness(120%) !important;
 	}
 	.search-bar-inner input {
 		color: var(--color-eeeeee) !important;
@@ -45,9 +50,6 @@
 	.emojiPicker-3m1S-j .category-2U57w6 {
 		color: var(--color-98aab6) !important;
 		background: var(--color-2f3136) !important;
-	}
-	.search-bar-light .search-bar-icon .icon.icon-search-bar-clear {
-		filter: invert(1) brightness(120%) !important;
 	}
 	.diversitySelector-tmmMv0 .popout-2nUePc {
 		background: var(--color-2f3136) !important;
