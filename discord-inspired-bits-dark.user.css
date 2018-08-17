@@ -62,10 +62,10 @@
 		background-color: var(--color-hover) !important;
 	}
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA {
-		background: var(--color-2f3136) !important;
+		background-color: transparent !important;
 	}
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
-		background: var(--color-6d6d6d) !important;
+		background-color: var(--color-6d6d6d) !important;
 	}
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
