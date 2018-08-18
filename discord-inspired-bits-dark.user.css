@@ -137,4 +137,69 @@
 	.create-guild-container.deprecated {
 		background-color: var(--color-7289da) !important;
 	}
+	/* Improve visibility of posted emoji which are dark and almost blend with background */
+	[alt=":bust_in_silhouette:"], [alt=":busts_in_silhouette:"],
+	[alt=":speaking_head:"], [alt=":dark_sunglasses:"], [alt=":ant:"],
+	[alt=":spider:"], [alt=":eight_pointed_black_star:"], [alt=":wavy_dash:"],
+	[alt=":curly_loop:"], [alt=":heavy_check_mark:"], [alt=":heavy_plus_sign:"],
+	[alt=":heavy_minus_sign:"], [alt=":heavy_division_sign:"],
+	[alt=":heavy_multiplication_x:"], [alt=":heavy_dollar_sign:"],
+	[alt=":currency_exchange:"], [alt=":end:"], [alt=":back:"],
+	[alt=":on:"], [alt=":top:"], [alt=":soon:"], [alt=":black_circle:"],
+	[alt=":black_small_square:"], [alt=":black_large_square:"],
+	[alt=":black_medium_square:"], [alt=":black_medium_small_square:"],
+	[alt=":spades:"], [alt=":clubs:"], [alt=":black_heart:"],
+	[alt=":space_invader:"] {
+		filter: invert(1) brightness(70%) hue-rotate(90deg) !important;
+	}
+	[alt=":water_buffalo:"], [alt=":footprints:"], [slt=":feet:"] {
+		filter: invert(1) brightness(90%) contrast(50%) !important;
+	}
+	[style*="background-position: -814px -88px; background-size: 924px 704px;"],
+	[style*="background-position: -44px -66px; background-size: 924px 704px;"],
+	[style*="background-position: -352px -110px; background-size: 924px 704px;"] {
+		filter: invert(1) brightness(90%) contrast(50%) !important;
+	}
+	[alt=":gorilla:"] {
+		filter: brightness(200%) !important;
+	}
+	[style*="background-position: -374px -154px; background-size: 924px 704px;"] {
+		filter: brightness(200%) !important;
+	}
+	/* EmojipPicker brighten too dark emoji */
+	[style*="background-position: -154px -44px; background-size: 924px 704px;"],
+	[style*="background-position: -176px -44px; background-size: 924px 704px;"],
+	[style*="background-position: -198px -44px; background-size: 924px 704px;"],
+	[style*="background-position: -418px -66px; background-size: 924px 704px;"],
+	[style*="background-position: -484px -88px; background-size: 924px 704px;"],
+	[style*="background-position: -506px -88px; background-size: 924px 704px;"],
+	[style*="background-position: -154px -418px; background-size: 924px 704px;"],
+	[style*="background-position: -286px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -308px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -330px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -374px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -396px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -418px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -440px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -462px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -484px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -506px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -462px -506px; background-size: 924px 704px;"],
+	[style*="background-position: -484px -506px; background-size: 924px 704px;"],
+	[style*="background-position: -308px -528px; background-size: 924px 704px;"],
+	[style*="background-position: -528px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -550px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -572px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -594px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -616px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -638px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -660px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -748px -484px; background-size: 924px 704px;"],
+	[style*="background-position: 0px -506px; background-size: 924px 704px;"],
+	[style*="background-position: -44px -506px; background-size: 924px 704px;"],
+	[style*="background-position: -110px -506px; background-size: 924px 704px;"],
+	[style*="background-position: -154px -506px; background-size: 924px 704px;"],
+	[style*="background-position: -462px -220px; background-size: 924px 704px;"] {
+		filter: invert(1) brightness(70%) hue-rotate(90deg) !important;
+	}
 }
