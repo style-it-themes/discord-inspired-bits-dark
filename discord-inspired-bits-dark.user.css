@@ -46,6 +46,21 @@
 		color: var(--color-98aab6) !important;
 		background: var(--color-2f3136) !important;
 	}
+	.emojiPicker-3m1S-j .thumb-2JwNFC {
+		min-height: 60px !important;
+	}
+	.emojiPicker-3m1S-j .thumb-2JwNFC {
+		background: var(--color-4a4d53) !important;
+	}
+	.scroller-wrap .scrollbar .thumb:after,
+	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scrollbar-2rkZSL .thumb-2JwNFC {
+		background: var(--color-4a4d53) !important;
+		opacity: .5 !important;
+	}
+	div:hover.scroller-wrap .scrollbar .thumb:after,
+	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d:hover .scrollbar-2rkZSL .thumb-2JwNFC {
+		opacity: 1 !important;
+	}
 	.diversitySelector-tmmMv0 .popout-2nUePc {
 		background: var(--color-2f3136) !important;
 		border: 1px solid var(--color-98aab6) !important;
