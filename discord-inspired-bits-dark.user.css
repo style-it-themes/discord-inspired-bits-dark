@@ -46,6 +46,9 @@
 		color: var(--color-98aab6) !important;
 		background: var(--color-2f3136) !important;
 	}
+	.emojiPicker-3m1S-j .categories-1feg4n {
+		border-top: 1px solid var(--color-4a4d53) !important;
+	}
 	.emojiPicker-3m1S-j .thumb-2JwNFC {
 		min-height: 60px !important;
 	}
