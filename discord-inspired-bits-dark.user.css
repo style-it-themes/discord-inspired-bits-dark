@@ -25,6 +25,12 @@
 		color: var(--color-eeeeee) !important;
 		opacity: .4 !important;
 	}
+	/* include autocomplete color change by vednoc but disable it for now */
+	/*
+	.theme-dark .autocomplete-1vrmpx {
+		background-color: var(--color-4a4d53);
+	}
+	*/
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
 	}
