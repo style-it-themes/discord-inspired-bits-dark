@@ -25,12 +25,14 @@
 		color: var(--color-eeeeee) !important;
 		opacity: .4 !important;
 	}
-	/* include autocomplete color change by vednoc but disable it for now */
-	/*
-	.theme-dark .autocomplete-1vrmpx {
-		background-color: var(--color-4a4d53);
+	.theme-dark .autocomplete-1vrmpx.autocomplete-i9yVHs {
+		/*background-color: var(--color-4a4d53);*/
+		border-left: 1px solid var(--color-4a4d53);
+		border-top: 1px solid var(--color-4a4d53);
+		border-right: 1px solid var(--color-4a4d53);
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
 	}
-	*/
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
 	}
