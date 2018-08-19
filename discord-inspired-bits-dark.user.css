@@ -137,7 +137,49 @@
 	.create-guild-container.deprecated {
 		background-color: var(--color-7289da) !important;
 	}
-	/* Improve visibility of posted emoji which are dark and almost blend with background */
+	/* Improve visibility of chat area emoji and emoji-picker emoji */
+	[alt=":water_buffalo:"], [alt=":footprints:"], [slt=":feet:"],
+	/* alt images above and style background-position/background-size below */
+	[style*="background-position: -814px -88px; background-size: 924px 704px;"],
+	[style*="background-position: -44px -66px; background-size: 924px 704px;"],
+	[style*="background-position: -352px -110px; background-size: 924px 704px;"] {
+		filter: invert(1) brightness(90%) contrast(50%) !important;
+	}
+	[alt=":space_invader:"], [alt=":gorilla:"], [alt=":bikini:"], [alt=":tophat:"],
+	[alt=":mortar_board:"], [alt=":guardsman:"], [alt=":electric_plug:"],
+	[alt=":prayer_beads:"], [alt=":bomb:"], [alt=":key2:"], [alt=":hole:"],
+	[alt=":flag_black:"], [alt=":pen_fountain:"], [alt=":black_nib:"],
+	[alt=":pen_ballpoint:"], [alt=":hockey:"], [alt=":levitate:"],
+	[alt=":microphone:"], [alt=":headphones:"], [alt=":musical_score:"],
+	[alt=":slot_machine:"], [alt=":bowling:"], [alt=":joystick:"],
+	[alt=":vhs:"],
+	/* alt images above and style background-position/background-size below */
+	[style*="background-position: -462px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -374px -154px; background-size: 924px 704px;"],
+	[style*="background-position: -880px -44px; background-size: 924px 704px;"],
+	[style*="background-position: -198px -66px; background-size: 924px 704px;"],
+	[style*="background-position: -242px -66px; background-size: 924px 704px;"],
+	[style*="background-position: -176px -66px; background-size: 220px 198px;"],
+	[style*="background-position: -528px -308px; background-size: 924px 704px;"],
+	[style*="background-position: -374px -330px; background-size: 924px 704px"],
+	[style*="background-position: -132px -330px; background-size: 924px 704px;"],
+	[style*="background-position: -704px -330px; background-size: 924px 704px;"],
+	[style*="background-position: -484px -330px; background-size: 924px 704px;"],
+	[style*="background-position: -484px -374px; background-size: 924px 704px;"],
+	[style*="background-position: -616px -374px; background-size: 924px 704px;"],
+	[style*="background-position: -638px -374px; background-size: 924px 704px;"],
+	[style*="background-position: -594px -374px; background-size: 924px 704px;"],
+	[style*="background-position: -770px -198px; background-size: 924px 704px;"],
+	[style*="background-position: -22px -176px; background-size: 220px 198px;"],
+	[style*="background-position: -242px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -264px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -286px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -528px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -550px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -792px -286px; background-size: 924px 704px;"],
+	[style*="background-position: 0px -308px; background-size: 924px 704px;"] {
+		filter: brightness(180%) !important;
+	}
 	[alt=":bust_in_silhouette:"], [alt=":busts_in_silhouette:"],
 	[alt=":speaking_head:"], [alt=":dark_sunglasses:"], [alt=":ant:"],
 	[alt=":spider:"], [alt=":eight_pointed_black_star:"], [alt=":wavy_dash:"],
@@ -149,24 +191,9 @@
 	[alt=":black_small_square:"], [alt=":black_large_square:"],
 	[alt=":black_medium_square:"], [alt=":black_medium_small_square:"],
 	[alt=":spades:"], [alt=":clubs:"], [alt=":black_heart:"],
-	[alt=":space_invader:"] {
-		filter: invert(1) brightness(70%) hue-rotate(90deg) !important;
-	}
-	[alt=":water_buffalo:"], [alt=":footprints:"], [slt=":feet:"] {
-		filter: invert(1) brightness(90%) contrast(50%) !important;
-	}
-	[style*="background-position: -814px -88px; background-size: 924px 704px;"],
-	[style*="background-position: -44px -66px; background-size: 924px 704px;"],
-	[style*="background-position: -352px -110px; background-size: 924px 704px;"] {
-		filter: invert(1) brightness(90%) contrast(50%) !important;
-	}
-	[alt=":gorilla:"] {
-		filter: brightness(200%) !important;
-	}
-	[style*="background-position: -374px -154px; background-size: 924px 704px;"] {
-		filter: brightness(200%) !important;
-	}
-	/* EmojipPicker brighten too dark emoji */
+	[alt=":telephone_receiver:"], [alt=":video_game:"], [alt=":video_camera:"],
+	[alt=":movie_camera:"], [alt=":projector:"],
+	/* alt images above and style background-position/background-size below */
 	[style*="background-position: -154px -44px; background-size: 924px 704px;"],
 	[style*="background-position: -176px -44px; background-size: 924px 704px;"],
 	[style*="background-position: -198px -44px; background-size: 924px 704px;"],
@@ -199,7 +226,11 @@
 	[style*="background-position: -44px -506px; background-size: 924px 704px;"],
 	[style*="background-position: -110px -506px; background-size: 924px 704px;"],
 	[style*="background-position: -154px -506px; background-size: 924px 704px;"],
-	[style*="background-position: -462px -220px; background-size: 924px 704px;"] {
-		filter: invert(1) brightness(70%) hue-rotate(90deg) !important;
+	[style*="background-position: -154px -308px; background-size: 924px 704px;"],
+	[style*="background-position: -440px -220px; background-size: 924px 704px;"],
+	[style*="background-position: -66px -308px; background-size: 924px 704px;"],
+	[style*="background-position: -88px -308px; background-size: 924px 704px;"],
+	[style*="background-position: -110px -308px; background-size: 924px 704px;"] {
+		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
 }
