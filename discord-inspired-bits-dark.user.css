@@ -225,8 +225,7 @@
 	[alt=":black_small_square:"], [alt=":black_large_square:"],
 	[alt=":black_medium_square:"], [alt=":black_medium_small_square:"],
 	[alt=":spades:"], [alt=":clubs:"], [alt=":black_heart:"],
-	[alt=":telephone_receiver:"], [alt=":video_game:"], [alt=":video_camera:"],
-	[alt=":movie_camera:"], [alt=":projector:"], [alt=":black_square_button:"],
+	[alt=":telephone_receiver:"], [alt=":black_square_button:"],
 	/* alt images above and img src below */
 	img[src*="1223c2e358973af4766acf976e941520.svg"],
 	img[src*="cb3eea8759d62489b21ccd3ee913c1c8.svg"],
@@ -259,10 +258,6 @@
 	img[src*="0fa5cea503e2cecc5dfe0d5eff8d2126.svg"],
 	img[src*="9e62a2acc00cd50132c7e09acf4671ff.svg"],
 	img[src*="2d6a964ec20df9bf319d7858ed43bf75.svg"],
-	img[src*="7d600babcd1bddfd7a7d35acc1ed4cd3.svg"],
-	img[src*="169565d0b5f43d2c5da4dd26bb54b160.svg"],
-	img[src*="8f58e04ab1a6dd3c9798877912c2cb93.svg"],
-	img[src*="dd21835e0b93364676fce48d9e81c609.svg"],
 	img[src*="5d15d81bc39f310bfa589fc4276c6d49.svg"],
 	/* img src above and style background-position/background-size below */
 	[style*="background-position: -154px -44px; background-size: 924px 704px;"],
@@ -281,12 +276,9 @@
 	[style*="background-position: -440px -484px; background-size: 924px 704px;"],
 	[style*="background-position: -462px -484px; background-size: 924px 704px;"],
 	[style*="background-position: -484px -484px; background-size: 924px 704px;"],
-	[style*="background-position: -506px -484px; background-size: 924px 704px;"],
 	[style*="background-position: -462px -506px; background-size: 924px 704px;"],
 	[style*="background-position: -484px -506px; background-size: 924px 704px;"],
 	[style*="background-position: -308px -528px; background-size: 924px 704px;"],
-	[style*="background-position: -528px -484px; background-size: 924px 704px;"],
-	[style*="background-position: -550px -484px; background-size: 924px 704px;"],
 	[style*="background-position: -572px -484px; background-size: 924px 704px;"],
 	[style*="background-position: -594px -484px; background-size: 924px 704px;"],
 	[style*="background-position: -616px -484px; background-size: 924px 704px;"],
@@ -298,11 +290,26 @@
 	[style*="background-position: -110px -506px; background-size: 924px 704px;"],
 	[style*="background-position: -154px -506px; background-size: 924px 704px;"],
 	[style*="background-position: -154px -308px; background-size: 924px 704px;"],
+	[style*="background-position: -198px -506px; background-size: 924px 704px;"] {
+		filter: brightness(25%) !important;
+	}
+	[alt=":video_game:"], [alt=":video_camera:"],
+	[alt=":movie_camera:"], [alt=":projector:"],
+	[alt=":tm:"], [alt=":registered:"] [alt=":copyright:"],
+	/* alt images above and img src below */
+	img[src*="7d600babcd1bddfd7a7d35acc1ed4cd3.svg"],
+	img[src*="169565d0b5f43d2c5da4dd26bb54b160.svg"],
+	img[src*="8f58e04ab1a6dd3c9798877912c2cb93.svg"],
+	img[src*="dd21835e0b93364676fce48d9e81c609.svg"],
+	.rawEmoji-y8E0FG.icon-3ZzoN7, /* rawEmoji are :tm: :registered: :copyright: replaces img src entries */
+	/* img src above and style background-position/background-size below */
 	[style*="background-position: -440px -220px; background-size: 924px 704px;"],
 	[style*="background-position: -66px -308px; background-size: 924px 704px;"],
 	[style*="background-position: -88px -308px; background-size: 924px 704px;"],
 	[style*="background-position: -110px -308px; background-size: 924px 704px;"],
-	[style*="background-position: -198px -506px; background-size: 924px 704px;"] {
+	[style*="background-position: -550px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -528px -484px; background-size: 924px 704px;"],
+	[style*="background-position: -506px -484px; background-size: 924px 704px;"] {
 		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
 }
