@@ -6,17 +6,20 @@
 
 ## About
 
-A Discord web dark style, that refine styling the areas the default dark style forgot.
-This means the default Discord's dark style must be enabled.
+A Discord web dark style, that refines styling the areas the default dark style forgot.
+The default Discord's dark style must be enabled.
 
 Elements covered include:
-* Emoji picker
+* Emoji picker and emoji
+  * black emoji
+  * various other emoji
 * Borders
 * popovers like:
   * new server
   * help
   * download app
 
+No more burning your retinas on the white areas and no more squinting to try see dark/light emoji on chat area, autocompleter, or emoji picker.
 
 ## Sites Covered
 
@@ -25,7 +28,11 @@ Elements covered include:
 | [Discord @me](https://discordapp.com/channels/@me)  |                      |  :heavy_check_mark:  |
 
 :asterisk: Full coverage entails this is only a partial style that in combination with default dark style,
-makes up for full coverage of areas that were not styled by discord.
+makes up for full coverage of areas that were not styled by Discord.
+
+## Discord app
+I don't use the Discord app but if you do and there's a way to use this stylesheet in the app,
+[I would like to hear from you](https://github.com/style-it-themes/discord-inspired-bits-dark/issues/new).
 
 ## Installing
 
