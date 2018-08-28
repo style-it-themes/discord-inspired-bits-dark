@@ -6,12 +6,9 @@
 @updateURL   https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark.user.css
 @license     CC-BY-SA-4.0
 @author      Style-it Themes by: the-j0k3r
-@advanced dropdown show_download_btn "Show download app button" {
-  hidden "Yes" <<<EOT
-EOT;
-  shown "No" <<<EOT
-  .downloadAppButton-3EFlA6 { display: none !important; }
-EOT;
+@preprocessor stylus
+
+@var checkbox show_download_btn "Show download app button" 1 {
 }
 ==/UserStyle== */
 @-moz-document domain("discordapp.com") {
@@ -331,6 +328,9 @@ EOT;
 	[style*="background-position: -506px -484px; background-size: 924px 704px;"] {
 		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
-	/*Hide download button*/
-	/*[[show_download_btn]]*/
+	if not show_download_btn {
+		.downloadAppButton-3EFlA6 {
+			display: none !important;
+		}
+	}
 }
