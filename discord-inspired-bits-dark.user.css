@@ -55,6 +55,9 @@ EOT;
     	margin-bottom: 15px !important;
     	padding-top: 15px !important;
 	}
+	.emojiButton-2wRZts {
+		top: 13px !important;
+	}
 
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
