@@ -6,6 +6,13 @@
 @updateURL   https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark.user.css
 @license     CC-BY-SA-4.0
 @author      Style-it Themes by: the-j0k3r
+@advanced dropdown hide_download "Hide download desktop version button" {
+  hidden "Yes" <<<EOT
+  .downloadAppButton-3EFlA6 { display: none !important; }
+EOT;
+  shown "No" <<<EOT
+EOT;
+}
 ==/UserStyle== */
 @-moz-document domain("discordapp.com") {
 	:root {
@@ -317,4 +324,7 @@
 	[style*="background-position: -506px -484px; background-size: 924px 704px;"] {
 		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
+
+	/*Hide download button*/
+	/*[[hide_download]]*/
 }
