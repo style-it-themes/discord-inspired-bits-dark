@@ -32,7 +32,6 @@ EOT;
 	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
 		color: var(--color-eeeeee) !important;
 	}
-	
 	.theme-dark .textArea-2Spzkt::placeholder {
 		color: var(--color-eeeeee) !important;
 		opacity: .4 !important;
@@ -45,8 +44,7 @@ EOT;
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 	}
-
-	/*Smaller text area*/
+	/*Narrower text area similar to app*/
 	.textArea-2Spzkt {
     	height: 35px !important;
     	padding-bottom: 0px !important;
@@ -54,7 +52,6 @@ EOT;
 	.emojiButton-2wRZts {
 		top: 13px !important;
 	}
-
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
 	}
@@ -334,7 +331,6 @@ EOT;
 	[style*="background-position: -506px -484px; background-size: 924px 704px;"] {
 		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
-
 	/*Hide download button*/
 	/*[[show_download_btn]]*/
 }
