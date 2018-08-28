@@ -21,6 +21,11 @@
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0%, 25%, .6);
 	}
+	/*log in field*/
+	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
+		color: var(--color-eeeeee) !important;
+	}
+	
 	.theme-dark .textArea-2Spzkt::placeholder {
 		color: var(--color-eeeeee) !important;
 		opacity: .4 !important;
