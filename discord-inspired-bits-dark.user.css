@@ -10,6 +10,9 @@
 
 @var checkbox show_download_btn "Show download app button" 1 {
 }
+
+@var checkbox compact_mode "Compact left sidebar" 1 {
+}
 ==/UserStyle== */
 @-moz-document domain("discordapp.com") {
 	:root {
@@ -331,6 +334,49 @@
 	if not show_download_btn {
 		.downloadAppButton-3EFlA6 {
 			display: none !important;
+		}
+	}
+	if not compact_mode {
+		.private-channels .channel .channel-name, .private-channels header, .private-channels .channel:hover .close {
+			display: none !important;
+		}
+		/*resizing the chanels*/
+		[class*="channels"] {
+			width: 70px !important;
+		}
+		.private-channels .channel {
+			width: 58px !important;
+		}
+		.private-channels .channel .link-button-icon {
+			margin-right: 0px !important;
+		}
+		/*typing*/
+		.avatar-small .status {
+			right: 0 !important;
+		}
+		/*only showing icons in the container*/
+		.container-2Thooq {
+			margin-left: -50px !important;
+		}
+		/*the distance between icons in the container*/
+		.button-2b6hmh {
+			width: 23px !important;
+		}
+		/*search bar*/
+		.private-channels .search-bar input {
+			width: 0px !important;
+			min-width: 0px !important;
+			opacity: 0 !important;
+		}
+		.search-bar .search-bar-inner {
+			background: transparent url(/assets/92222a08554d0e19d6bf1a45ca780b7c.svg) no-repeat !important;
+			background-position-y: center !important;
+			border-color: transparent !important;
+			margin-left: 8px !important;
+			filter: brightness(200%);
+		}
+		.search-bar .search-bar-inner:hover {
+			filter: brightness(350%);
 		}
 	}
 }
