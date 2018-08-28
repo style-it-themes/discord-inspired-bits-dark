@@ -6,11 +6,11 @@
 @updateURL   https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark.user.css
 @license     CC-BY-SA-4.0
 @author      Style-it Themes by: the-j0k3r
-@advanced dropdown hide_download "Hide download desktop version button" {
+@advanced dropdown show_download_btn "Show download app button" {
   hidden "Yes" <<<EOT
-  .downloadAppButton-3EFlA6 { display: none !important; }
 EOT;
   shown "No" <<<EOT
+  .downloadAppButton-3EFlA6 { display: none !important; }
 EOT;
 }
 ==/UserStyle== */
@@ -337,5 +337,5 @@ EOT;
 	}
 
 	/*Hide download button*/
-	/*[[hide_download]]*/
+	/*[[show_download_btn]]*/
 }
