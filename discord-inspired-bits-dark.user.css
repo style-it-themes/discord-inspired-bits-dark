@@ -9,6 +9,7 @@
 @preprocessor stylus
 @var checkbox show_download_btn "Show download app button" 1 {}
 @var checkbox compact_mode "Compact left sidebar" 0 {}
+@var checkbox compact_mode_transition "Hover effect for compact sidebar" 0 {}
 ==/UserStyle== */
 @-moz-document domain("discordapp.com") {
 	:root {
@@ -385,6 +386,67 @@
 		/*# in servers*/
 		.marginReset-3RfdVe {
 			display: none;
+		}
+	}
+	if compact_mode_transition {
+		/*title besides icon*/
+		[class*="channels"]:hover .private-channels .channel .channel-name,
+		.container-2Thooq:hover .private-channels .channel .channel-name
+		{
+			display: inherit !important;
+		}
+		/*direct messages header*/
+		[class*="channels"]:hover .private-channels header,
+		.container-2Thooq:hover .private-channels header {
+			color: #fff !important;
+		}
+		/*resizing the chanels*/
+		[class*="channels"]:hover, .container-2Thooq:hover [class*="channels"] {
+			width: 240px !important;
+		}
+		/*channel div - FIX ME!*/
+		[class*="channels"]:hover .private-channels .channel,
+		.container-2Thooq:hover .private-channels .channel, .container-2Thooq:hover .private-channels {
+			width: 220px !important;
+		}
+		/*friends and activity titles*/
+		[class*="channels"]:hover .private-channels .channel .link-button-icon,
+ 		.container-2Thooq:hover .private-channels .channel .link-button-icon {
+			margin-right: 18px !important;
+		}
+		/*only showing icons in the container*/
+		[class*="channels"]:hover .container-2Thooq {
+			margin-left: 0px !important;
+		}
+		/*search bar*/
+		[class*="channels"]:hover .private-channels .search-bar input {
+			width: 100% !important;
+			min-width: 50px !important;
+			opacity: 1 !important;
+		}
+		[class*="channels"]:hover .private-channels .search-bar .search-bar-inner {
+			background: rgba(0,0,0,.2) !important;
+			border: 1px solid rgba(0,0,0,.1) !important;
+			margin-left: 0px !important;
+			filter: brightness(100%);
+		}
+		/*# in servers*/
+		[class*="channels"]:hover .marginReset-3RfdVe {
+			display: inherit;
+		}
+		/*Transtions*/
+		[class*="channels"], .container-2Thooq, .search-bar .search-bar-inner, .marginReset-3RfdVe {
+			transition-duration: .5s;
+			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+		}
+		[class*="channels"]:hover .private-channels .channel .channel-name, .container-2Thooq:hover .private-channels .channel .channel-name,
+		[class*="channels"]:hover .private-channels header, .container-2Thooq:hover .private-channels header,
+		[class*="channels"]:hover,
+		[class*="channels"]:hover .container-2Thooq, .container-2Thooq:hover [class*="channels"],
+		[class*="channels"]:hover .private-channels .search-bar .search-bar-inner,
+ 		[class*="channels"]:hover .marginReset-3RfdVe {
+			transition-duration: .5s;
+			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 		}
 	}
 }
