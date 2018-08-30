@@ -107,9 +107,16 @@
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
 		background-color: var(--color-6d6d6d) !important;
 	}
+	/* upstream bug fix emoji cut off in Firefox #9 */
+    .emojiPicker-3m1S-j .scroller-3vODG7 {
+        padding-right: 10px !important;
+    }
 	.scrollbar-2rkZSL .pad-29zQak {
-		outline: 1px solid var(--color-2f3136) !important;
-	}
+        width: 3px !important;
+        left: -3px !important;
+        background: var(--color-2f3136) !important;
+    }
+	/* end fix */
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
 	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
