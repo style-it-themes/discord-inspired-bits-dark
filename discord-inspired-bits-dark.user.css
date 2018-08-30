@@ -34,10 +34,9 @@
 		opacity: .4 !important;
 	}
 	.theme-dark .autocomplete-1vrmpx.autocomplete-i9yVHs {
-		/*background-color: var(--color-4a4d53);*/
-		border-left: 1px solid var(--color-4a4d53);
-		border-top: 1px solid var(--color-4a4d53);
-		border-right: 1px solid var(--color-4a4d53);
+		border-left: 1px solid var(--color-4a4d53) !important;
+		border-top: 1px solid var(--color-4a4d53) !important;
+		border-right: 1px solid var(--color-4a4d53) !important;
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 	}
