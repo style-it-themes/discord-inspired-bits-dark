@@ -340,7 +340,7 @@
 		}
 		/*direct messages header*/
 		.private-channels header {
-			color: var(--color-2f3136) !important;
+			opacity: 0 !important;
 		}
 		/*resizing the chanels*/
 		[class*="channels"] {
@@ -398,7 +398,7 @@
 		/*direct messages header*/
 		[class*="channels"]:hover .private-channels header,
 		.container-2Thooq:hover .private-channels header {
-			color: #fff !important;
+			opacity: .3 !important;
 		}
 		/*resizing the chanels*/
 		[class*="channels"]:hover, [class*="channels"]:hover > [class*="private"] {
@@ -435,16 +435,23 @@
 			display: inherit;
 		}
 		/*Transtions*/
-		[class*="channels"], .container-2Thooq, .search-bar .search-bar-inner, .marginReset-3RfdVe {
+		.private-channels header, .private-channels .search-bar input {
+			transition: opacity .2s ease-out;
+		}
+		.private-channels .search-bar .search-bar-inner {
+			transition: all .2s ease-out;
+		}
+		[class*="channels"], .container-2Thooq, .marginReset-3RfdVe, .private-channels .channel .channel-name {
 			transition-duration: .5s;
 			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 		}
-		[class*="channels"]:hover .private-channels .channel .channel-name, .container-2Thooq:hover .private-channels .channel .channel-name,
-		[class*="channels"]:hover .private-channels header, .container-2Thooq:hover .private-channels header,
+		[class*="channels"]:hover .private-channels header,
 		[class*="channels"]:hover,
-		[class*="channels"]:hover .container-2Thooq, .container-2Thooq:hover [class*="channels"],
-		[class*="channels"]:hover .private-channels .search-bar .search-bar-inner,
- 		[class*="channels"]:hover .marginReset-3RfdVe {
+		[class*="channels"]:hover .container-2Thooq, 
+ 		[class*="channels"]:hover .marginReset-3RfdVe,
+		[class*="channels"]:hover .private-channels .search-bar input,
+		[class*="channels"]:hover .private-channels .search-bar .search-bar-inner {
+			transition-delay: .5s;
 			transition-duration: .5s;
 			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 		}
