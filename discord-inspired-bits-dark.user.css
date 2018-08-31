@@ -401,10 +401,10 @@
 			color: #fff !important;
 		}
 		/*resizing the chanels*/
-		[class*="channels"]:hover, .container-2Thooq:hover [class*="channels"] {
+		[class*="channels"]:hover, [class*="channels"]:hover > [class*="private"] {
 			width: 240px !important;
 		}
-		/*channel div - FIX ME!*/
+		/*channel div*/
 		[class*="channels"]:hover .private-channels .channel,
 		.container-2Thooq:hover .private-channels .channel, .container-2Thooq:hover .private-channels {
 			width: 220px !important;
