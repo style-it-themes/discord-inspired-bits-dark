@@ -348,7 +348,7 @@
 		}
 		/*hide scrollbar*/
 		[class*="channels"] .scroller-2FKFPG {
-			overflow: hidden !important;
+			overflow-x: hidden !important;
 		}
 		/*channel div*/
 		.private-channels .channel {
