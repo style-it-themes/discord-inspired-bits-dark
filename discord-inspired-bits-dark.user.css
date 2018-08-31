@@ -428,30 +428,21 @@
 			background: rgba(0,0,0,.2) !important;
 			border: 1px solid rgba(0,0,0,.1) !important;
 			margin-left: 0px !important;
-			filter: brightness(100%);
-		}
-		/*# in servers*/
-		[class*="channels"]:hover .marginReset-3RfdVe {
-			display: inherit;
 		}
 		/*Transtions*/
-		.private-channels header, .private-channels .search-bar input {
-			transition: opacity .2s ease-out;
-		}
-		.private-channels .search-bar .search-bar-inner {
-			transition: all .2s ease-out;
-		}
-		[class*="channels"], .container-2Thooq, .marginReset-3RfdVe, .private-channels .channel .channel-name {
+		[class*="channels"], .container-2Thooq, 
+		.private-channels header,
+		.private-channels .channel .channel-name,
+ 		.private-channels .search-bar input, .private-channels .search-bar .search-bar-inner,
+		.marginReset-3RfdVe {
 			transition-duration: .5s;
 			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 		}
-		[class*="channels"]:hover .private-channels header,
 		[class*="channels"]:hover,
-		[class*="channels"]:hover .container-2Thooq, 
- 		[class*="channels"]:hover .marginReset-3RfdVe,
-		[class*="channels"]:hover .private-channels .search-bar input,
-		[class*="channels"]:hover .private-channels .search-bar .search-bar-inner {
-			transition-delay: .5s;
+		[class*="channels"]:hover .private-channels header,
+		[class*="channels"]:hover .container-2Thooq,
+ 		[class*="channels"]:hover > [class*="private"] {
+			transition-delay: .7s;
 			transition-duration: .5s;
 			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 		}
