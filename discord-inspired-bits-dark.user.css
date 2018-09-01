@@ -384,8 +384,8 @@
 			margin-left: 8px !important;
 			filter: brightness(200%);
 		}
-		/*# in servers*/
-		.marginReset-3RfdVe {
+		/*# and invites in servers*/
+		.marginReset-3RfdVe, [class*="channelNotices"] > [class*="invite"] {
 			display: none;
 		}
 	}
