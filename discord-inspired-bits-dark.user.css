@@ -476,11 +476,33 @@
 			width: 55px !important;
 		}
 		[class*="membersGroup"] {
-			display: none !important;
+			visibility: hidden !important;
+			height: 0 !important;
+			padding: 0 !important;
 		}
 		@media screen and (min-width: 0px) and (max-width: 600px) {
 			[class*="membersWrap"] { 
 				display: none !important;
+			}
+		}
+		if compact_mode_transition {
+			[class*="membersWrap"]:hover { 
+				min-width: 240px !important;
+				width: 240px !important;
+			}
+			[class*="membersWrap"]:hover [class*="membersGroup"] {
+				visibility: visible !important;
+				padding: 20px 8px 0px 16px !important;
+				height: 40px !important;
+			}
+			[class*="membersWrap"], [class*="membersGroup"] {
+				transition-duration: .5s;
+				transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+			}
+			[class*="membersWrap"]:hover, [class*="membersWrap"]:hover [class*="membersGroup"] {
+				transition-delay: transition_delay;
+				transition-duration: .5s;
+				transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 			}
 		}
 	}
