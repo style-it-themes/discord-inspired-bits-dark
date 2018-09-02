@@ -462,6 +462,9 @@
 			[class*="membersGroup"] {
 				display: none !important;
 			}
+			[class*="members"] > [class*="member"] {
+				margin: 5px 0 5px 8px !important;
+			}
 		}
 		@media screen and (min-width: 0px) and (max-width: 600px) {
 			[class*="membersWrap"] { 
@@ -479,6 +482,9 @@
 			visibility: hidden !important;
 			height: 0 !important;
 			padding: 0 !important;
+		}
+		[class*="members"] > [class*="member"] {
+			margin: 5px 0 5px 8px !important;
 		}
 		@media screen and (min-width: 0px) and (max-width: 600px) {
 			[class*="membersWrap"] { 
