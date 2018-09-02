@@ -383,6 +383,7 @@
 		}
 		.private-channels .search-bar .search-bar-inner {
 			background: transparent url(https://discordapp.com/assets/92222a08554d0e19d6bf1a45ca780b7c.svg) no-repeat !important;
+			background-position-x: 5px !important;
 			background-position-y: center !important;
 			border-color: transparent !important;
 			margin-left: 8px !important;
@@ -430,9 +431,10 @@
 			opacity: 1 !important;
 		}
 		[class*="channels"]:hover .private-channels .search-bar .search-bar-inner {
-			background: rgba(0,0,0,.2) !important;
+			background-color: rgba(0,0,0,0.2) !important;
 			border: 1px solid rgba(0,0,0,.1) !important;
 			margin-left: 0px !important;
+			padding-left: 20px;
 		}
 		/*Transtions*/
 		[class*="channels"], .container-2Thooq, 
