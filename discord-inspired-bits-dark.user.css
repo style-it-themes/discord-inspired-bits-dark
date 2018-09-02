@@ -10,9 +10,9 @@
 @var checkbox show_download_btn "Show download app button" 1 {}
 @var checkbox compact_mode 			  "Compact left sidebar" 0 {}
 @var checkbox compact_mode_transition "Hover effect for compact sidebar" 0 {}
-@var text     transition_delay 		  "Time until sidebar is displayed on hvoer" 0.7s
+@var text     transition_delay 		  "Time until sidebar is displayed on hover" 0.7s
 @var select   server_sidebar		  "Compact server sidebar" {
-    "Chnage on resize": "resize",
+    "Change on resize": "resize",
     "Always compact": "compact"
 }
 ==/UserStyle== */
