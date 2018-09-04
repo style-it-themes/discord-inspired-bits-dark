@@ -391,7 +391,7 @@
 		}
 		/*# and invites in servers*/
 		.marginReset-3RfdVe, [class*="channelNotices"] > [class*="invite"] {
-			display: none;
+			display: none !important;
 		}
 	}
 	if compact_mode_transition {
