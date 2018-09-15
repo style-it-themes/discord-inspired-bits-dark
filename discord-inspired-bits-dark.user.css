@@ -388,7 +388,6 @@
 			}
 			// remove # in servers
 			[class*="content"] > [class*="marginReset"] {
-				// display: none !important;
 				max-width: 0 !important;
 				opacity: 0 !important;
 			}
@@ -434,6 +433,10 @@
 					}
 				}
 			}
+		}
+		// hide settings in activities and friends pages
+		[class*="activityFeed"], #friends {
+			z-index: 2 !important;
 		}
 	}
 	// fix visible text on chromium
