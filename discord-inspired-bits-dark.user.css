@@ -346,6 +346,7 @@
 		[class*="channels"] {
 			width: 70px !important;
 			transition: 300ms ease-in-out;
+			overflow-x: hidden;
 			// apply only if CMT is enabled
 			if compact_mode_transition {
 				// show sidebar
@@ -433,10 +434,6 @@
 					}
 				}
 			}
-		}
-		// hide settings in activities and friends pages
-		[class*="activityFeed"], #friends {
-			z-index: 2 !important;
 		}
 	}
 	// fix visible text on chromium
