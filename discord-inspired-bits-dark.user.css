@@ -7,9 +7,14 @@
 @license     CC-BY-SA-4.0
 @author      Style-it Themes by: the-j0k3r
 @preprocessor stylus
-
-@var checkbox show_download_btn "Show download app button" 1 {
+@var checkbox show_download_btn "Show download app button" 1 {}
+@var checkbox compact_mode 			  "Compact left sidebar" 0 {}
+@var select   server_sidebar		  "Compact right sidebar" {
+    "On resize": "resize",
+    "Always": "compact"
 }
+@var checkbox compact_mode_transition "Use hover effect for compact mode" 1 {}
+@var text     transition_delay 		  "Effect timing on hover" 0.7s
 ==/UserStyle== */
 @-moz-document domain("discordapp.com") {
 	:root {
@@ -337,6 +342,170 @@
 	if not show_download_btn {
 		.downloadAppButton-3EFlA6 {
 			display: none !important;
+		}
+	}
+	if compact_mode {
+		// disable "direct messages" text
+		[class*="privateChannels"] header {
+			display: none !important;
+		}
+		[class*="channels"] {
+			width: 70px !important;
+			transition: 300ms ease-in-out;
+			overflow-x: hidden;
+			// apply only if CMT is enabled
+			if compact_mode_transition {
+				// show sidebar
+				&:hover {
+					width: 240px !important;
+					transition-delay: transition_delay;
+				}
+				// hide usernames until sidebar is activated
+				&:hover [class*="channel"] [class*="name"] {
+					margin-left: 0;
+					transition-delay: 0.3s;
+				}
+				// show search-bar
+				&:hover .search-bar {
+					transition-delay: transition-delay !important;
+					background-color: var(--color-4a4d53) !important;
+				}
+				// animation for search-bar
+				&:hover .search-bar {
+					transition: 0.3s ease-in-out;
+					transition-delay: transition_delay !important;
+					&:hover {
+						transition-delay: 0s !important;
+					}
+				}
+				// hide usernames
+				[class*="channel"] [class*="name"] {
+					margin-left: 50px;
+					transition: margin-left transition_delay ease-in-out;
+					transition-delay: transition-delay;
+				}
+			}
+			// remove extra margin on channels
+			[class*="channel"] > a {
+				margin: 1px 8px 1px 8px !important;
+			}
+			// remove instant invites
+			[class*="channelNotices"] > [class*="invite"] {
+				display: none !important;
+			}
+			// remove # in servers
+			[class*="content"] > [class*="marginReset"] {
+				max-width: 0 !important;
+				opacity: 0 !important;
+			}
+			// fix icons in direct messages
+			[class*="linkButtonIcon"] {
+				min-width: 24px;
+			}
+			// fix scroller in firefox
+			[class*="scroller"] {
+				padding-right: 0;
+			}
+			// your avatar and settings
+			[class*="container"] > [class*="avatar-small"] {
+				margin: 0 16px 0 6px;
+			}
+			// typing...
+			.avatar-small .status[class*="typing"] {
+				right: 0px !important;
+			}
+			// search bar
+			[class*="privateChannels"] .search-bar {
+				.search-bar-inner {
+					background: transparent url(https://discordapp.com/assets/92222a08554d0e19d6bf1a45ca780b7c.svg) no-repeat !important;
+					background-position-x: 5px !important;
+					background-position-y: center !important;
+					border-color: transparent !important;
+					margin-left: 8px !important;
+					filter: brightness(200%);
+					input {
+						width: 0px !important;
+						min-width: 0px !important;
+						opacity: 0 !important;
+					}
+					if compact_mode_transition {
+						&:hover {
+							transition: 200ms ease-in-out;
+							transition-delay: transition_delay;
+						}
+						input {
+							padding-left: 35px;
+							opacity: 1 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	// fix visible text on chromium
+	if not compact_mode_transition {
+		[class*="privateChannels"] > a > *:first-child {
+			margin-right: 22px !important;
+		}
+	}
+	if server_sidebar == resize {
+		/*Server right sidebar*/
+		@media screen and (min-width: 0px) and (max-width: 900px) {
+			[class*="membersWrap"] { 
+				min-width: 55px !important;
+				width: 55px !important;
+			}
+			[class*="membersGroup"] {
+				display: none !important;
+			}
+			[class*="members"] > [class*="member"] {
+				margin: 5px 0 5px 8px !important;
+			}
+		}
+		@media screen and (min-width: 0px) and (max-width: 600px) {
+			[class*="membersWrap"] { 
+				display: none !important;
+			}
+		}
+	}
+	if server_sidebar == compact {
+		/*Server right sidebar*/
+		[class*="membersWrap"] { 
+			min-width: 55px !important;
+			width: 55px !important;
+		}
+		[class*="membersGroup"] {
+			visibility: hidden !important;
+			height: 0 !important;
+			padding: 0 !important;
+		}
+		[class*="members"] > [class*="member"] {
+			margin: 5px 0 5px 8px !important;
+		}
+		@media screen and (min-width: 0px) and (max-width: 600px) {
+			[class*="membersWrap"] { 
+				display: none !important;
+			}
+		}
+		if compact_mode_transition {
+			[class*="membersWrap"]:hover { 
+				min-width: 240px !important;
+				width: 240px !important;
+			}
+			[class*="membersWrap"]:hover [class*="membersGroup"] {
+				visibility: visible !important;
+				padding: 20px 8px 0px 16px !important;
+				height: 40px !important;
+			}
+			[class*="membersWrap"], [class*="membersGroup"] {
+				transition-duration: .5s;
+				transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+			}
+			[class*="membersWrap"]:hover, [class*="membersWrap"]:hover [class*="membersGroup"] {
+				transition-delay: transition_delay;
+				transition-duration: .5s;
+				transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+			}
 		}
 	}
 }
