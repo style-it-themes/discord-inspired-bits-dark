@@ -25,10 +25,20 @@
 		--color-35393e: #35393e;
 		--color-36393f: #36393f;
 		--color-2f3136: #2f3136;
+		--color-25282d: #25282d;
+		--color-282b30: #282b30;
 		--color-202225: #202225;
 		--color-7289da: #7289da;
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0%, 25%, .6);
+	}
+	/*Language Dropdowns*/
+	[class*="moreList"], [class*="localeList"] {
+		background: var(--color-282b30) !important;
+	}
+	[class*="moreList"]:hover, [class*="localeBase"]:hover {
+		background: var(--color-25282d) !important;
+		color: var(--color-eeeeee) !important;
 	}
 	/*log in field*/
 	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
