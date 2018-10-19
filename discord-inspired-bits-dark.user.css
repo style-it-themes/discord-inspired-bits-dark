@@ -355,7 +355,7 @@
 		}
 	}
 	if compact_mode {
-		// disable "direct messages" text
+		/*disable "direct messages" text*/
 		[class*="privateChannels"] header {
 			display: none !important;
 		}
@@ -363,24 +363,24 @@
 			width: 70px !important;
 			transition: 300ms ease-in-out;
 			overflow-x: hidden;
-			// apply only if CMT is enabled
+			/*apply only if CMT is enabled*/
 			if compact_mode_transition {
-				// show sidebar
+				/*show sidebar*/
 				&:hover {
 					width: 240px !important;
 					transition-delay: transition_delay;
 				}
-				// hide usernames until sidebar is activated
+				/*hide usernames until sidebar is activated*/
 				&:hover [class*="channel"] [class*="name"] {
 					margin-left: 0;
 					transition-delay: 0.3s;
 				}
-				// show search-bar
+				/*show search-bar*/
 				&:hover .search-bar {
 					transition-delay: transition-delay !important;
 					background-color: var(--color-4a4d53) !important;
 				}
-				// animation for search-bar
+				/*animation for search-bar*/
 				&:hover .search-bar {
 					transition: 0.3s ease-in-out;
 					transition-delay: transition_delay !important;
@@ -388,43 +388,43 @@
 						transition-delay: 0s !important;
 					}
 				}
-				// hide usernames
+				/*hide usernames*/
 				[class*="channel"] [class*="name"] {
 					margin-left: 50px;
 					transition: margin-left transition_delay ease-in-out;
 					transition-delay: transition-delay;
 				}
 			}
-			// remove extra margin on channels
+			/*remove extra margin on channels*/
 			[class*="channel"] > a {
 				margin: 1px 8px 1px 8px !important;
 			}
-			// remove instant invites
+			/*remove instant invites*/
 			[class*="channelNotices"] > [class*="invite"] {
 				display: none !important;
 			}
-			// remove # in servers
+			/*remove # in servers*/
 			[class*="content"] > [class*="marginReset"] {
 				max-width: 0 !important;
 				opacity: 0 !important;
 			}
-			// fix icons in direct messages
+			/*fix icons in direct messages*/
 			[class*="linkButtonIcon"] {
 				min-width: 24px;
 			}
-			// fix scroller in firefox
+			/*fix scroller in firefox*/
 			[class*="scroller"] {
 				padding-right: 0;
 			}
-			// your avatar and settings
+			/*your avatar and settings*/
 			[class*="container"] > [class*="avatar-small"] {
 				margin: 0 16px 0 6px;
 			}
-			// typing...
+			/*typing...*/
 			.avatar-small .status[class*="typing"] {
 				right: 0px !important;
 			}
-			// search bar
+			/*search bar*/
 			[class*="privateChannels"] .search-bar {
 				.search-bar-inner {
 					background: transparent url(https://discordapp.com/assets/92222a08554d0e19d6bf1a45ca780b7c.svg) no-repeat !important;
@@ -452,7 +452,7 @@
 			}
 		}
 	}
-	// fix visible text on chromium
+	/*fix visible text on chromium*/
 	if not compact_mode_transition {
 		[class*="privateChannels"] > a > *:first-child {
 			margin-right: 22px !important;
