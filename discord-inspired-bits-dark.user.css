@@ -144,6 +144,9 @@
 	.theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G {
 		background-color: var(--color-36393f) !important;
 	}
+	.scroller-wrap.light .scrollbar, .scroller-wrap.light .scrollbar::after {
+		background-color: var(--color-2f3136) !important;
+	}
 	.form-deprecated .control-group input[type="email"],
 	.form-deprecated .control-group input[type="number"],
 	.form-deprecated .control-group input[type="password"],
