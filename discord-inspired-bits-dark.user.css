@@ -8,6 +8,7 @@
 @author       Style-it Themes by: the-j0k3r
 @preprocessor stylus
 @var checkbox show_download_btn "Show download app button" 1 {}
+@var checkbox show_store        "Show the story and library buttons" 1 {}
 @var checkbox compact_mode      "Compact left sidebar" 0 {}
 @var select   server_sidebar    "Compact right sidebar" {
     "On resize": "resize",
@@ -352,6 +353,18 @@
 	[style*="background-position: -506px -484px; background-size: 924px 704px;"] {
 		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
+  /* fix store items overflow */
+	[class*="gameTitle"] {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	if not show_store {
+		[class*="channels"] [class*="channel"] > a[href*="store"],
+		[class*="channels"] [class*="channel"] > a[href*="library"] {
+			display: none !important;
+		}
+	}
 	if not show_download_btn {
 		.downloadAppButton-3EFlA6 {
 			display: none !important;
@@ -464,7 +477,7 @@
 	if server_sidebar == resize {
 		/*Server right sidebar*/
 		@media screen and (min-width: 0px) and (max-width: 900px) {
-			[class*="membersWrap"] { 
+			[class*="membersWrap"] {
 				min-width: 55px !important;
 				width: 55px !important;
 			}
@@ -476,14 +489,14 @@
 			}
 		}
 		@media screen and (min-width: 0px) and (max-width: 600px) {
-			[class*="membersWrap"] { 
+			[class*="membersWrap"] {
 				display: none !important;
 			}
 		}
 	}
 	if server_sidebar == compact {
 		/*Server right sidebar*/
-		[class*="membersWrap"] { 
+		[class*="membersWrap"] {
 			min-width: 55px !important;
 			width: 55px !important;
 		}
@@ -496,12 +509,12 @@
 			margin: 5px 0 5px 8px !important;
 		}
 		@media screen and (min-width: 0px) and (max-width: 600px) {
-			[class*="membersWrap"] { 
+			[class*="membersWrap"] {
 				display: none !important;
 			}
 		}
 		if compact_mode_transition {
-			[class*="membersWrap"]:hover { 
+			[class*="membersWrap"]:hover {
 				min-width: 240px !important;
 				width: 240px !important;
 			}
