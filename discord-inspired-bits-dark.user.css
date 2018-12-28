@@ -1,11 +1,12 @@
 /* ==UserStyle==
 @name         Discord Inspired Bits Dark
 @namespace    Style-it Themes
-@version      1.1.3
+@version      1.1.4
 @homepageURL  https://github.com/style-it-themes/discord-inspired-bits-dark
 @updateURL    https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark.user.css
 @license      CC-BY-SA-4.0
 @author       Style-it Themes by: the-j0k3r
+ +co-authors  https://github.com/style-it-themes/discord-inspired-bits-dark/graphs/contributors
 @preprocessor stylus
 @var checkbox show_download_btn "Show download app button" 1 {}
 @var checkbox show_store        "Show the story and library buttons" 1 {}
@@ -63,11 +64,18 @@
 		border-color: var(--color-7289da) !important;
 	}
 	.theme-dark .input-cIJ7To::placeholder {
-		color: #98aab6 !important;
+		color: var(--color-98aab6) !important;
 	}
 	.theme-dark .input-1mgnkM, .theme-dark .input-cIJ7To {
 		border-bottom-color: var(--color-98aab6) !important;
 		color: var(--color-eeeeee) !important;
+	}
+	.regionSelectModal-12e-57 {
+		background: var(--color-36393f) !important;
+	}
+	.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {
+		background-color: var(--color-4a4d53) !important;
+		border: 2px solid var(--color-6d6d6d) !important;
 	}
 	/*log in field*/
 	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
