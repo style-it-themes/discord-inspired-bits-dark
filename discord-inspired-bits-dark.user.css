@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Discord Inspired Bits Dark
 @namespace    Style-it Themes
-@version      1.1.2
+@version      1.1.3
 @homepageURL  https://github.com/style-it-themes/discord-inspired-bits-dark
 @updateURL    https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark.user.css
 @license      CC-BY-SA-4.0
@@ -11,8 +11,8 @@
 @var checkbox show_store        "Show the story and library buttons" 1 {}
 @var checkbox compact_mode      "Compact left sidebar" 0 {}
 @var select   server_sidebar    "Compact right sidebar" {
-    "On resize": "resize",
-    "Always": "compact"
+	"On resize": "resize",
+	"Always": "compact"
 }
 @var checkbox compact_mode_transition "Use hover effect for compact mode" 1 {}
 @var text     transition_delay 		  "Effect timing on hover" 0.7s
@@ -41,6 +41,34 @@
 		background: var(--color-25282d) !important;
 		color: var(--color-eeeeee) !important;
 	}
+	.theme-dark .slide-2pHaq5 {
+		background: var(--color-35393e) !important;
+	}
+	.theme-dark .action-1lSjCi, .theme-light .action-1lSjCi {
+		background: var(--color-4a4d53) !important;
+	}
+	.theme-dark .input-cIJ7To:not(:focus) {
+		border-color: var(--color-6d6d6d) !important;
+	}
+	.theme-dark .footer-2yfCgX {
+		background-color: var(--color-2f3136) !important;
+	}
+	.regionSelect-3lf4eE button, .regionSelect-3lf4eE .regionSelectInner-24f4Ce {
+		border: 1px solid var(--color-6d6d6d) !important;
+	}
+	.theme-dark .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
+	.theme-dark .regionSelect-3lf4eE:hover button,
+	.theme-light .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
+	.theme-light .regionSelect-3lf4eE:hover button {
+		border-color: var(--color-7289da) !important;
+	}
+	.theme-dark .input-cIJ7To::placeholder {
+		color: #98aab6 !important;
+	}
+	.theme-dark .input-1mgnkM, .theme-dark .input-cIJ7To {
+		border-bottom-color: var(--color-98aab6) !important;
+		color: var(--color-eeeeee) !important;
+	}
 	/*log in field*/
 	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
 		color: var(--color-eeeeee) !important;
@@ -58,8 +86,8 @@
 	}
 	/*Narrower text area similar to app*/
 	.textArea-2Spzkt {
-    	height: 35px !important;
-    	padding-bottom: 0px !important;
+		height: 35px !important;
+		padding-bottom: 0px !important;
 	}
 	.emojiButton-2wRZts {
 		top: 13px !important;
@@ -123,14 +151,14 @@
 		background-color: var(--color-6d6d6d) !important;
 	}
 	/* upstream bug fix emoji cut off in Firefox #9 */
-    .emojiPicker-3m1S-j .scroller-3vODG7 {
-        padding-right: 10px !important;
-    }
+	.emojiPicker-3m1S-j .scroller-3vODG7 {
+		padding-right: 10px !important;
+	}
 	.scrollbar-2rkZSL .pad-29zQak {
-        width: 3px !important;
-        left: -3px !important;
-        background: var(--color-2f3136) !important;
-    }
+		width: 3px !important;
+		left: -3px !important;
+		background: var(--color-2f3136) !important;
+	}
 	/* end fix */
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
@@ -353,7 +381,7 @@
 	[style*="background-position: -506px -484px; background-size: 924px 704px;"] {
 		filter: invert(1) brightness(80%) hue-rotate(180deg) !important;
 	}
-  /* fix store items overflow */
+	/* fix store items overflow */
 	[class*="gameTitle"] {
 		white-space: nowrap;
 		overflow: hidden;
