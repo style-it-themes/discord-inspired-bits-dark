@@ -94,11 +94,12 @@
 	}
 	/*Narrower text area similar to app*/
 	.textArea-2Spzkt {
-		height: 35px !important;
+		min-height: 35px !important;
 		padding-bottom: 0px !important;
 	}
-	.emojiButton-2wRZts {
-		top: 13px !important;
+	.emojiButtonHovered-1rWNal, .emojiButtonNormal-TdumYh,
+ 	.buttons-205you .buttonWrapper-1ZmCpA {
+		top: 3px !important;
 	}
 	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
 		background-color: var(--color-2f3136) !important;
