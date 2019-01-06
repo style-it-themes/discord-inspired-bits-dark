@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name         Discord Inspired Bits Dark
 @namespace    Style-it Themes
-@version      1.1.4
+@version      1.1.5
 @homepageURL  https://github.com/style-it-themes/discord-inspired-bits-dark
 @updateURL    https://raw.githubusercontent.com/style-it-themes/discord-inspired-bits-dark/master/discord-inspired-bits-dark.user.css
 @license      CC-BY-SA-4.0
 @author       Style-it Themes by: the-j0k3r
- +co-authors  https://github.com/style-it-themes/discord-inspired-bits-dark/graphs/contributors
+ + co-authors https://github.com/style-it-themes/discord-inspired-bits-dark/graphs/contributors
 @preprocessor stylus
 @var checkbox show_download_btn "Show download app button" 1 {}
 @var checkbox show_store        "Show the story and library buttons" 1 {}
