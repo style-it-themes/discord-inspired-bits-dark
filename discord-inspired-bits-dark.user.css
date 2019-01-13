@@ -18,7 +18,7 @@
 @var checkbox compact_mode_transition "Use hover effect for compact mode" 1 {}
 @var text     transition_delay 		  "Effect timing on hover" 0.7s
 ==/UserStyle== */
-@-moz-document domain("discordapp.com") {
+@-moz-document domain("discordapp.com"), domain("blog.discordapp.com") {
 	:root {
 		--color-eeeeee: #eee;
 		--color-98aab6: #98aab6;
@@ -30,9 +30,95 @@
 		--color-25282d: #25282d;
 		--color-282b30: #282b30;
 		--color-202225: #202225;
+		--color-18191c: #18191c;
 		--color-7289da: #7289da;
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0%, 25%, .6);
+	}
+	body, .sectionCompanyTweets-1vbhhc,
+ .screenContent, .jobsWrap-37l1u6, .jobsContentWrapper-3nV1Oo,
+ .widthDefault-1dErvg, .wrapperOuter-3aXCiE, .wrapper-3L1vsW {
+		background: var(--color-35393e) !important;
+		background-color: var(--color-35393e) !important;
+	}
+	.wave-1hkxOo {
+		color: var(--color-35393e) !important;
+	}
+	.pageSectionWrapper-3-JP1O p, .pageSectionWrapper-3-JP1O h1,
+	.theme-blurple .headingDefault-1oVaTd, .theme-blurple .textDefault-1mTLiI,
+	.theme-dark .headingDefault-1oVaTd {
+		color: var(--color-18191c) !important;
+	}
+	.backButton-1lQDaX:before, .community-enabled .logo {
+		filter: invert(1) !important;
+	}
+	.outlinedWhite-1asq79 {
+		border: 1px solid var(--color-18191c) !important;
+		color: var(--color-18191c) !important;
+	}
+	.card-3Qj_Yx, .squadDivider-nJvGZ {
+		background: var(--color-4a4d53) !important;
+	}
+	.videoSection-1lZJQD, .sectionJobs-34F39V, .community-enabled,
+  .topSectionSpotify-1lI0-P {
+		background: var(--color-18191c) !important;
+	}
+	.card-3Qj_Yx h4, .card-3Qj_Yx p, .widthDefault-1dErvg h2,
+	.widthHalf-O3EkLQ h2, .investorsIntro-2yxckT h2, .widthNarrow-1i_UBo h2,
+	.widthNarrow-1i_UBo h3, .screenContent h3, .u-textColorNormal,
+	.header-eQl4Uk, .description-1IKhh2, .filterLabel-1Qr-ue,
+	.bgGreyDots-2QF6Cc .description-1gVGxt h4,
+	.bgGreyDots-2QF6Cc .description-1gVGxt li,
+	.bgBlackBlobs-pWyUCy .widthNarrow-1i_UBo h2,
+	.bgBlackBlobs-pWyUCy .widthNarrow-1i_UBo h3,
+	.bgBlackBlobs-pWyUCy .widthNarrow-1i_UBo p,
+	.pageSectionWrapper-3-JP1O .widthHalf-O3EkLQ p,
+	.community-enabled h1, .community-enabled p, .flex-item h3,
+	.heroHeading-3bVmA3 .headingDefault-1oVaTd,
+	.heroHeading-3bVmA3 .textDefault-1mTLiI,
+	.pageSectionWrapper-3-JP1O p {
+		color: var(--color-98aab6) !important;
+	}
+	.category-grid .flex-item {
+		background-color: var(--color-4a4d53) !important;
+	}
+	.community-enabled .flex-item {
+		box-shadow: 0px 5px 20px rgba(101, 101, 101, .3) !important;
+	}
+	.community-enabled .flex-item:hover {
+		box-shadow: 0px 5px 20px rgba(101, 101, 101, .5) !important;
+	}
+	.container-divider {
+		border-top: 1px solid var(--color-6d6d6d) !important;
+	}
+	.filterOptionSelected-36lk4Q {
+		background-color: var(--color-eeeeee) !important;
+		border-color: var(--color-18191c) !important;
+		color: var(--color-18191c) !important;
+	}
+	.jobCardImage-16PrsQ {
+		opacity: .7;
+	}
+	.appButton-3GZ9-9 {
+		border: 2px solid var(--color-eeeeee) !important;
+		color: var(--color-eeeeee) !important;
+		filter: brightness(90%) !important;
+	}
+	.listItemSocialMedia-RWHjN1 a img,
+	.localePicker-25NM64 img, .button-1w5pas {
+		filter: brightness(90%) !important;
+	}
+	.bgGreyBlobs-34PjpN {
+		background: url('https://discordapp.com/assets/e26250b04de9e3ff34cdd67dfe9b2fa6.svg') var(--color-36393f) top no-repeat !important;
+	}
+	svg .wavePath-haxJK1 {
+		fill: var(--color-18191c) !important;
+	}
+	.card-3Qj_Yx .investorImage-2iIswv {
+		filter: brightness(260%) !important;
+	}
+	.sectionCompanyStats-2khWuF {
+		background-image: none !important;
 	}
 	/*Language Dropdowns*/
 	[class*="moreList"], [class*="localeList"] {
