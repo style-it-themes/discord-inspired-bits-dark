@@ -8,10 +8,11 @@
 @author       Style-it Themes by: the-j0k3r
  + co-authors https://github.com/style-it-themes/discord-inspired-bits-dark/graphs/contributors
 @preprocessor stylus
-@var checkbox show_download_btn "Show download app button" 1 {}
-@var checkbox show_store        "Show the story and library buttons" 1 {}
-@var checkbox compact_mode      "Compact left sidebar" 0 {}
-@var select   server_sidebar    "Compact right sidebar" {
+@var checkbox show_download_btn   "Show download app button" 1 {}
+@var checkbox show_store_lib_btns "Show the store and library buttons" 1 {}
+@var checkbox show_square_avatars "Show square avatars" 0 {}
+@var checkbox compact_mode        "Compact left sidebar" 0 {}
+@var select   server_sidebar      "Compact right sidebar" {
 	"On resize": "resize",
 	"Always": "compact"
 }
@@ -500,15 +501,20 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	if not show_store {
+	if not show_download_btn {
+		.downloadAppButton-3EFlA6 {
+			display: none !important;
+		}
+	}
+	if not show_store_lib_btns {
 		[class*="channels"] [class*="channel"] > a[href*="store"],
 		[class*="channels"] [class*="channel"] > a[href*="library"] {
 			display: none !important;
 		}
 	}
-	if not show_download_btn {
-		.downloadAppButton-3EFlA6 {
-			display: none !important;
+	if show_square_avatars {
+		.image-33JSyf, .wrapper-2F3Zv8 {
+			border-radius: 2px !important;
 		}
 	}
 	if compact_mode {
