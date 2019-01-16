@@ -38,8 +38,8 @@
 		--color-select: hsla(0, 0%, 25%, .6);
 	}
 	body, .sectionCompanyTweets-1vbhhc,
- .screenContent, .jobsWrap-37l1u6, .jobsContentWrapper-3nV1Oo,
- .widthDefault-1dErvg, .wrapperOuter-3aXCiE, .wrapper-3L1vsW {
+	.screenContent, .jobsWrap-37l1u6, .jobsContentWrapper-3nV1Oo,
+	.widthDefault-1dErvg, .wrapperOuter-3aXCiE, .wrapper-3L1vsW {
 		background: var(--color-35393e) !important;
 		background-color: var(--color-35393e) !important;
 	}
@@ -62,7 +62,7 @@
 		background: var(--color-4a4d53) !important;
 	}
 	.videoSection-1lZJQD, .sectionJobs-34F39V, .community-enabled,
-  .topSectionSpotify-1lI0-P {
+	.topSectionSpotify-1lI0-P {
 		background: var(--color-18191c) !important;
 	}
 	.card-3Qj_Yx h4, .card-3Qj_Yx p, .widthDefault-1dErvg h2,
