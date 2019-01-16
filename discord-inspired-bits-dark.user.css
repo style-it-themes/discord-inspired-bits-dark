@@ -27,11 +27,13 @@
 		--color-35393e: #35393e;
 		--color-36393f: #36393f;
 		--color-2f3136: #2f3136;
+		--color-23272a: #23272a;
 		--color-25282d: #25282d;
 		--color-282b30: #282b30;
 		--color-202225: #202225;
 		--color-18191c: #18191c;
 		--color-7289da: #7289da;
+		--color-inputf: rgba(114,118,125,.3);
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0%, 25%, .6);
 	}
@@ -122,10 +124,10 @@
 	}
 	/*Language Dropdowns*/
 	[class*="moreList"], [class*="localeList"] {
-		background: var(--color-282b30) !important;
+		background: var(--color-23272a) !important;
 	}
 	[class*="moreList"]:hover, [class*="localeBase"]:hover {
-		background: var(--color-25282d) !important;
+		background: var(--color-18191c) !important;
 		color: var(--color-eeeeee) !important;
 	}
 	.theme-dark .slide-2pHaq5 {
@@ -136,6 +138,10 @@
 	}
 	.theme-dark .input-cIJ7To:not(:focus) {
 		border-color: var(--color-6d6d6d) !important;
+	}
+	.theme-dark .input-2VB9rf, .searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
+		background-color: var(--color-inputf) !important;
+		color: var(--color-eeeeee) !important;
 	}
 	.theme-dark .footer-2yfCgX {
 		background-color: var(--color-2f3136) !important;
@@ -178,6 +184,12 @@
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 	}
+	.theme-dark .emptyState-2gL-9T {
+		filter: brightness(160%) !important;
+	}
+	.theme-dark .emptyStateNote-ZYTetQ, .theme-dark .anchor-3Z-8Bb {
+		filter: brightness(80%) !important;
+	}
 	/*Narrower text area similar to app*/
 	.textArea-2Spzkt {
 		min-height: 35px !important;
@@ -187,21 +199,27 @@
 	.buttons-205you .buttonWrapper-1ZmCpA {
 		top: 3px !important;
 	}
-	.emojiPicker-3m1S-j, .search-bar.search-bar-light {
+	.emojiPicker-3m1S-j, .searchBar-2_Yu-C.searchBarLight-1NxoDG {
 		background-color: var(--color-2f3136) !important;
 	}
-	.search-bar.search-bar-light .search-bar-inner {
+	.emojiPicker-3m1S-j input {
+		color: var(--color-eeeeee) !important;
+	}
+	.searchBarLight-1NxoDG .searchBarIcon-1J6sKG .icon-3cZ1F_.iconSearchBarClear-2DW-Kr {
+		filter: brightness(120%) !important;
+	}
+	.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
 		background-color: var(--color-4a4d53) !important;
 	}
-	.search-bar.search-bar-light input::placeholder {
+	.searchBarInner-1_Tg2R input::placeholder {
 		color: var(--color-eeeeee) !important;
 		opacity: .3 !important;
 	}
 	.emojiPicker-3m1S-j .search-bar-icon .icon.icon-search-bar-clear,
-	.emojiPicker-3m1S-j .search-bar-icon .icon {
+	.emojiPicker-3m1S-j .searchBarIcon-1J6sKG {
 		filter: invert(1) !important;
 	}
-	.search-bar-inner input {
+	.searchBarInner-1_Tg2R input {
 		color: var(--color-eeeeee) !important;
 	}
 	.emojiPicker-3m1S-j .category-2U57w6 {
