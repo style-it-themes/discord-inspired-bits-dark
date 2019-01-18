@@ -3,11 +3,16 @@
 </p>
 <br>
 <h2 align="center"><strong>Discord Inspired Bits Dark</strong></h2>
+<p align="center">
+  <a href="https://discord.gg/MhwZjV">
+    <img src="https://img.shields.io/badge/style--it--themes-discord%20channel-blue.svg?style=for-the-badge" alt="Style-it-themes Discord Channel">
+  </a>
+</p>
 
 ## About
 
-A Discord web dark style, that refines styling the areas the default dark style forgot.
-The default Discord's dark style must be enabled.
+A Discord web dark style, that refines styling the areas the default discords dark style forgot.
+So ensure the default Discord's dark style is enabled.
 
 Elements covered include:
 * Emoji picker and emoji
@@ -18,6 +23,7 @@ Elements covered include:
   * new server
   * help
   * download app
+* Dropdown menus
 
 No more burning your retinas on the white areas and no more squinting to try see dark/light emoji on chat area, autocompleter, or emoji picker.
 
@@ -26,6 +32,7 @@ No more burning your retinas on the white areas and no more squinting to try see
 | Site Name                                           | Partial              | Full                 |
 | --------------------------------------------------- | :------------------: | :------------------: |
 | [Discord @me](https://discordapp.com/channels/@me)  |                      |  :heavy_check_mark:  |
+| [Discord blog](https://blog.discordapp.com/)  |                      |  :heavy_check_mark:  |
 
 :asterisk: Full coverage entails this is only a partial style that in combination with default dark style,
 makes up for full coverage of areas that were not styled by Discord.
