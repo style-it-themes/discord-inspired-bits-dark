@@ -122,7 +122,7 @@
 	svg .wavePath-haxJK1 {
 		fill: var(--color-18191c) !important;
 	}
-	.card-3Qj_Yx .investorImage-2iIswv {
+	.card-3Qj_Yx .investorImage-2iIswv, .scrollerWrap-2lJEkd .image-2JDb81 {
 		filter: brightness(260%) !important;
 	}
 	.sectionCompanyStats-2khWuF {
@@ -149,7 +149,8 @@
 	.theme-dark .input-cIJ7To:not(:focus) {
 		border-color: var(--color-6d6d6d) !important;
 	}
-	.theme-dark .input-2VB9rf, .searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
+	.theme-dark .input-2VB9rf, .searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R,
+	.form-236Xmo .controlGroup-2GQ-D1 input[type="text"] {
 		background-color: var(--color-inputf) !important;
 		color: var(--color-eeeeee) !important;
 	}
@@ -177,12 +178,24 @@
 		border-bottom-color: var(--color-98aab5) !important;
 		color: var(--color-eeeeee) !important;
 	}
-	.regionSelectModal-12e-57 {
+	.regionSelectModal-12e-57, .modalNewUser-3IRw8L > .steps-370EKx {
 		background: var(--color-36393f) !important;
 	}
 	.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {
 		background-color: var(--color-4a4d53) !important;
 		border: 2px solid var(--color-6d6d6d) !important;
+	}
+	.modalNewUser-3IRw8L > .steps-370EKx .step1-28s17G {
+		filter: invert(90%) hue-rotate(180deg) !important;
+	}
+	.form-236Xmo .btnDefault-3gHhPM {
+		background-color: var(--color-2f3136) !important;
+		border-bottom: 2px solid var(--color-7289da) !important;
+		color: var(--color-6d6d6d) !important;
+	}
+	.form-236Xmo .formActions-1-Snm- {
+		background-color: var(--color-2f3136) !important;
+		border-top: 1px solid var(--color-6d6d6d) !important;
 	}
 	/*log in field*/
 	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
@@ -199,7 +212,8 @@
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 	}
-	.theme-dark .emptyState-2gL-9T {
+	.theme-dark .emptyState-2gL-9T, .timestampCozy-2hLAPV,
+	#discord-widget .widget-member .widget-member-game {
 		filter: brightness(160%) !important;
 	}
 	/*Narrower text area similar to app*/
@@ -278,7 +292,7 @@
 		background-color: var(--color-hover) !important;
 	}
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA {
-		background-color: transparent !important;
+		background-color: var(--transparent) !important;
 	}
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
 		background-color: var(--color-6d6d6d) !important;
@@ -532,7 +546,8 @@
 		}
 	}
 	if show_square_avatars {
-		.image-33JSyf, .wrapper-2F3Zv8 {
+		.image-33JSyf, .wrapper-2F3Zv8,
+		.inner-1W0Bkn {
 			border-radius: 4px !important;
 		}
 		.mask-3OgeRz {
