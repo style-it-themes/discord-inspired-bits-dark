@@ -63,7 +63,7 @@
 		border: 1px solid var(--color-18191c) !important;
 		color: var(--color-18191c) !important;
 	}
-	.card-3Qj_Yx, .squadDivider-nJvGZ {
+	.card-3Qj_Yx:not(.item-26Dhrx), .squadDivider-nJvGZ {
 		background: var(--color-4a4d53) !important;
 	}
 	.videoSection-1lZJQD, .sectionJobs-34F39V, .community-enabled,
@@ -163,7 +163,8 @@
 	.theme-dark .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
 	.theme-dark .regionSelect-3lf4eE:hover button,
 	.theme-light .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
-	.theme-light .regionSelect-3lf4eE:hover button {
+	.theme-light .regionSelect-3lf4eE:hover button,
+	.theme-dark .input-cIJ7To:focus {
 		border-color: var(--color-7289da) !important;
 	}
 	.theme-dark .input-cIJ7To::placeholder,
@@ -269,13 +270,21 @@
 	.emojiPicker-3m1S-j .thumb-2JwNFC {
 		min-height: 60px !important;
 	}
-	.emojiPicker-3m1S-j .thumb-2JwNFC {
+	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL,
+	.track-1JN30G {
 		background: var(--color-4a4d53) !important;
 	}
-	.scroller-wrap .scrollbar .thumb:after,
-	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scrollbar-2rkZSL .thumb-2JwNFC {
-		background: var(--color-4a4d53) !important;
+	.scroller-wrap .scrollbar .thumb:after, .emojiPicker-3m1S-j .thumb-2JwNFC,
+	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scrollbar-2rkZSL .thumb-2JwNFC,
+	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .thumb-2JwNFC {
+		background: var(--color-98aab5) !important;
 		opacity: .5 !important;
+	}
+	.thumb-2JwNFC {
+		width: 8px !important;
+		height: 8px !important;
+		margin-left: 3px !important;
+		border-radius: 1px !important;
 	}
 	div:hover.scroller-wrap .scrollbar .thumb:after,
 	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d:hover .scrollbar-2rkZSL .thumb-2JwNFC {
@@ -296,6 +305,30 @@
 	}
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
 		background-color: var(--color-6d6d6d) !important;
+	}
+	.track-1JN30G {
+		border-radius: 0 !important;
+		margin-left: 2px !important;
+		width: 10px !important;
+	}
+	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .thumb-2JwNFC {
+		width: 8px !important;
+		border: 5px solid var(--color-98aab5) !important;
+		margin-left: 2px !important;
+		min-height: 60px !important;
+		opacity: .5 !important;
+	}
+	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL .track-1JN30G {
+		border: 6px solid var(--transparent) !important;
+		margin-left: 1px !important;
+	}
+	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .track-1JN30G {
+		background: var(--color-36393f) !important;
+		box-shadow: none !important;
+	}
+	.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .track-1JN30G {
+		border-color: transparent !important;
+		background: var(--color-4a4d53) !important;
 	}
 	/* upstream bug fix emoji cut off in Firefox #9 */
 	.emojiPicker-3m1S-j .scroller-3vODG7 {
@@ -547,7 +580,8 @@
 	}
 	if show_square_avatars {
 		.image-33JSyf, .wrapper-2F3Zv8,
-		.inner-1W0Bkn {
+		.inner-1W0Bkn, .avatarUploaderInner-3UNxY3,
+		.inviteSmallIcon-1-yydW, .avatarHint-1qgaV3 {
 			border-radius: 4px !important;
 		}
 		.mask-3OgeRz {
