@@ -269,26 +269,7 @@
 	}
 	.emojiPicker-3m1S-j .thumb-2JwNFC {
 		min-height: 60px !important;
-	}
-	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL,
-	.track-1JN30G {
-		background: var(--color-4a4d53) !important;
-	}
-	.scroller-wrap .scrollbar .thumb:after, .emojiPicker-3m1S-j .thumb-2JwNFC,
-	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scrollbar-2rkZSL .thumb-2JwNFC,
-	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .thumb-2JwNFC {
-		background: var(--color-98aab5) !important;
-		opacity: .5 !important;
-	}
-	.thumb-2JwNFC {
-		width: 8px !important;
-		height: 8px !important;
-		margin-left: 3px !important;
-		border-radius: 1px !important;
-	}
-	div:hover.scroller-wrap .scrollbar .thumb:after,
-	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d:hover .scrollbar-2rkZSL .thumb-2JwNFC {
-		opacity: 1 !important;
+		width: 10px !important;
 	}
 	.diversitySelector-tmmMv0 .popout-2nUePc {
 		background: var(--color-2f3136) !important;
@@ -306,28 +287,63 @@
 	.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
 		background-color: var(--color-6d6d6d) !important;
 	}
+	/* scrollbars */
 	.track-1JN30G {
 		border-radius: 0 !important;
-		margin-left: 2px !important;
+		border: none !important;
+		margin: 2px !important;
 		width: 10px !important;
-	}
-	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .thumb-2JwNFC {
-		width: 8px !important;
-		border: 5px solid var(--color-98aab5) !important;
-		margin-left: 2px !important;
-		min-height: 60px !important;
-		opacity: .5 !important;
 	}
 	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL .track-1JN30G {
 		border: 6px solid var(--transparent) !important;
 		margin-left: 1px !important;
 	}
+	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL,
+	.track-1JN30G {
+		background: var(--color-4a4d53) !important;
+		width: 8px !important;
+	}
+	.scroller-wrap .scrollbar .thumb:after, .emojiPicker-3m1S-j .thumb-2JwNFC,
+	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scrollbar-2rkZSL .thumb-2JwNFC {
+		background: var(--color-98aab5) !important;
+		opacity: .4 !important;
+		width: 6px !important;
+	}
+	.emojiPicker-3m1S-j:hover .thumb-2JwNFC {
+		width: 8px !important;
+		opacity: .8 !important;
+	}
+	.emojiPicker-3m1S-j .thumb-2JwNFC {
+		width: 8px !important;
+	}
+	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .thumb-2JwNFC {
+		border: 6px solid var(--color-98aab5) !important;
+		opacity: .22 !important;
+	}
+	.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .thumb-2JwNFC {
+		width: 6px !important;
+		border: 6px solid var(--color-98aab5) !important;
+		margin: 1px !important;
+		opacity: .8 !important;
+	}
+	.membersWrap-2h-GB4 .thumb-2JwNFC {
+		width: 8px !important;
+		margin-left: 3px !important;
+	}
+	.thumb-2JwNFC {
+		width: 6px !important;
+		margin: 1px !important;
+		border-radius: 0 !important;
+	}
+	div:hover.scroller-wrap .scrollbar .thumb:after,
+	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d:hover .scrollbar-2rkZSL .thumb-2JwNFC {
+		opacity: 1 !important;
+	}
 	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .track-1JN30G {
 		background: var(--color-36393f) !important;
-		box-shadow: none !important;
 	}
 	.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .track-1JN30G {
-		border-color: transparent !important;
+		border-color: var(--transparent) !important;
 		background: var(--color-4a4d53) !important;
 	}
 	/* upstream bug fix emoji cut off in Firefox #9 */
@@ -356,6 +372,7 @@
 	.scroller-wrap.light .scrollbar, .scroller-wrap.light .scrollbar::after {
 		background-color: var(--color-2f3136) !important;
 	}
+	/* end scrollbars */
 	.form-deprecated .control-group input[type="email"],
 	.form-deprecated .control-group input[type="number"],
 	.form-deprecated .control-group input[type="password"],
@@ -662,10 +679,10 @@
 			/*search bar*/
 			[class*="privateChannels"] .search-bar {
 				.search-bar-inner {
-					background: transparent url(https://discordapp.com/assets/92222a08554d0e19d6bf1a45ca780b7c.svg) no-repeat !important;
+					background: var(--transparent) url(https://discordapp.com/assets/92222a08554d0e19d6bf1a45ca780b7c.svg) no-repeat !important;
 					background-position-x: 5px !important;
 					background-position-y: center !important;
-					border-color: transparent !important;
+					border-color: var(--transparent) !important;
 					margin-left: 8px !important;
 					filter: brightness(200%);
 					input {
