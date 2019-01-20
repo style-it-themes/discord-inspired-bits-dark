@@ -17,12 +17,14 @@
 	"Always": "compact"
 }
 @var checkbox compact_mode_transition "Use hover effect for compact mode" 1 {}
-@var text     transition_delay 		  "Effect timing on hover" 0.7s
+@var text     transition_delay 		    "Effect timing on hover" 0.7s
+@var text     scrollbars-width 		    "Scrollbars width" 10px
 ==/UserStyle== */
 @-moz-document domain("discordapp.com"), domain("blog.discordapp.com") {
 	:root {
-		--color-eeeeee: #eee;
+		--color-eeeeee: #eeeeee;
 		--color-98aab5: #98aab5;
+		--color-5b666d: #5b666d;
 		--color-6d6d6d: #6d6d6d;
 		--color-4a4d53: #4a4d53;
 		--color-35393e: #35393e;
@@ -246,7 +248,7 @@
 	/* firefox align */
 	.emojiButtonHovered-1rWNal, .emojiButtonNormal-TdumYh,
 	.buttons-205you .buttonWrapper-1ZmCpA {
-		top: 3px !important;
+		top: 1px !important;
 	}
 	.emojiPicker-3m1S-j, .searchBar-2_Yu-C.searchBarLight-1NxoDG {
 		background-color: var(--color-2f3136) !important;
@@ -289,10 +291,6 @@
 		opacity: 1 !important;
 		filter: brightness(120%) !important;
 	}
-	.emojiPicker-3m1S-j .thumb-2JwNFC {
-		min-height: 60px !important;
-		width: 10px !important;
-	}
 	.diversitySelector-tmmMv0 .popout-2nUePc {
 		background: var(--color-2f3136) !important;
 		border: 1px solid var(--color-98aab5) !important;
@@ -314,7 +312,12 @@
 	.emojiPicker-3m1S-j .thumb-2JwNFC {
 		border-radius: 0 !important;
 		border: none !important;
-		width: 10px !important;
+	}
+	if scrollbars-width {
+		.track-1JN30G, .thumb-2JwNFC, .emojiPicker-3m1S-j .track-1JN30G,
+		.emojiPicker-3m1S-j .thumb-2JwNFC {
+			width: scrollbars-width !important;
+		}
 	}
 	.emojiPicker-3m1S-j .thumb-2JwNFC {
 		margin: 1px !important;
@@ -340,8 +343,7 @@
 		background-color: var(--color-2f3136) !important;
 	}
 	.thumb-2JwNFC, .channels-Ie2l6A .thumb-2JwNFC, .membersWrap-2h-GB4 .thumb-2JwNFC {
-		background-color: var(--color-98aab5) !important;
-		filter: brightness(60%) !important;
+		background-color: var(--color-5b666d) !important;
 	}
 	/* upstream bug fix emoji cut off in Firefox #9 */
 	.emojiPicker-3m1S-j .scroller-3vODG7 {
