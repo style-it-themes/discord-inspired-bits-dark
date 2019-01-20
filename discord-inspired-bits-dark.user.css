@@ -34,6 +34,7 @@
 		--color-202225: #202225;
 		--color-18191c: #18191c;
 		--color-7289da: #7289da;
+		--color-3ca374: #3ca374;
 		--color-inputf: rgba(114, 118, 125, .3);
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0, 25%, .6);
@@ -159,6 +160,9 @@
 	}
 	.regionSelect-3lf4eE button, .regionSelect-3lf4eE .regionSelectInner-24f4Ce {
 		border: 1px solid var(--color-6d6d6d) !important;
+	}
+	.theme-dark .friendsAction-__WNE9.friendsActionVoiceCall-3EdPsR:hover {
+		background-color: var(--color-3ca374) !important;
 	}
 	.theme-dark .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
 	.theme-dark .regionSelect-3lf4eE:hover button,
