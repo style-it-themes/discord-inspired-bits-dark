@@ -218,10 +218,28 @@
 		filter: brightness(160%) !important;
 	}
 	/*Narrower text area similar to app*/
-	.textArea-2Spzkt {
-		min-height: 35px !important;
-		padding-bottom: 0px !important;
+	@supports (-moz-user-select: none) {
+		/* ? Fixes input element in firefox based browsers. */
+		[class*="channelTextArea-"] textarea[class*="textArea-"] {
+			margin: 0 !important;
+			padding: 0 10px !important;
+			/* ? Center input text on the first row of text. */
+			&[style*="height: auto"] {
+				padding-top: 10px !important;
+				margin: 1px 0 -3px !important;
+		}
+		/* ? Reset padding whenever there are two or more rows of text. */
+		&:not([style*="height: auto"]) {
+				padding: 10px !important;
+			}
+		}
 	}
+	/* chrome align */
+	.emojiButtonHovered-1rWNal:not(*:root), .emojiButtonNormal-TdumYh:not(*:root),
+	.buttons-205you .buttonWrapper-1ZmCpA:not(*:root) {
+		top: 0px !important;
+	}
+	/* firefox align */
 	.emojiButtonHovered-1rWNal, .emojiButtonNormal-TdumYh,
 	.buttons-205you .buttonWrapper-1ZmCpA {
 		top: 3px !important;
@@ -288,81 +306,27 @@
 		background-color: var(--color-6d6d6d) !important;
 	}
 	/* scrollbars */
-	.track-1JN30G {
+	.track-1JN30G, .thumb-2JwNFC, .emojiPicker-3m1S-j .track-1JN30G,
+	.emojiPicker-3m1S-j .thumb-2JwNFC {
 		border-radius: 0 !important;
 		border: none !important;
-		margin: 2px !important;
 		width: 10px !important;
-	}
-	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL .track-1JN30G {
-		border: 6px solid var(--transparent) !important;
-		margin-left: 1px !important;
-	}
-	.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scrollbar-2rkZSL,
-	.track-1JN30G {
-		background: var(--color-4a4d53) !important;
-		width: 8px !important;
-	}
-	.scroller-wrap .scrollbar .thumb:after, .emojiPicker-3m1S-j .thumb-2JwNFC,
-	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scrollbar-2rkZSL .thumb-2JwNFC {
-		background: var(--color-98aab5) !important;
-		opacity: .4 !important;
-		width: 6px !important;
-	}
-	.emojiPicker-3m1S-j:hover .thumb-2JwNFC {
-		width: 8px !important;
-		opacity: .8 !important;
 	}
 	.emojiPicker-3m1S-j .thumb-2JwNFC {
-		width: 8px !important;
-	}
-	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .thumb-2JwNFC {
-		border: 6px solid var(--color-98aab5) !important;
-		opacity: .22 !important;
-	}
-	.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .thumb-2JwNFC {
-		width: 6px !important;
-		border: 6px solid var(--color-98aab5) !important;
 		margin: 1px !important;
-		opacity: .8 !important;
-	}
-	.membersWrap-2h-GB4 .thumb-2JwNFC {
-		width: 8px !important;
-		margin-left: 3px !important;
-	}
-	.channels-Ie2l6A .thumb-2JwNFC {
-		width: 8px !important;
-		margin-left: 4px !important;
-	}
-	.channels-Ie2l6A .track-1JN30G {
-		width: 10px !important;
-	}
-	.thumb-2JwNFC {
-		width: 6px !important;
-		margin: 1px !important;
-		border-radius: 0 !important;
 	}
 	div:hover.scroller-wrap .scrollbar .thumb:after,
 	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d:hover .scrollbar-2rkZSL .thumb-2JwNFC {
 		opacity: 1 !important;
 	}
-	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .track-1JN30G {
-		background: var(--color-36393f) !important;
+	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .track-1JN30G, .scrollbar-2rkZSL .track-1JN30G {
+		border-color: var(--transparent) !important;
+		background: var(--color-2f3136) !important;
 	}
 	.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .track-1JN30G {
 		border-color: var(--transparent) !important;
-		background: var(--color-4a4d53) !important;
-	}
-	/* upstream bug fix emoji cut off in Firefox #9 */
-	.emojiPicker-3m1S-j .scroller-3vODG7 {
-		padding-right: 10px !important;
-	}
-	.scrollbar-2rkZSL .pad-29zQak {
-		width: 3px !important;
-		left: -3px !important;
 		background: var(--color-2f3136) !important;
 	}
-	/* end fix */
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
 	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
 	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
@@ -371,14 +335,20 @@
 	.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL .pad-29zQak {
 		background-color: var(--color-2f3136) !important;
 	}
-	.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G,
-	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G,
-	.theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv > .scrollbar-2rkZSL > .track-1JN30G {
-		background-color: var(--color-36393f) !important;
+	.thumb-2JwNFC, .channels-Ie2l6A .thumb-2JwNFC, .membersWrap-2h-GB4 .thumb-2JwNFC {
+		background-color: var(--color-98aab5) !important;
+		filter: brightness(60%) !important;
 	}
-	.scroller-wrap.light .scrollbar, .scroller-wrap.light .scrollbar::after {
-		background-color: var(--color-2f3136) !important;
+	/* upstream bug fix emoji cut off in Firefox #9 */
+	.emojiPicker-3m1S-j .scroller-3vODG7 {
+		padding-right: 10px !important;
 	}
+	body .scrollbar-2rkZSL .pad-29zQak {
+		width: 3px !important;
+		left: -3px !important;
+		background: var(--color-2f3136) !important;
+	}
+	/* end fix */
 	/* end scrollbars */
 	.form-deprecated .control-group input[type="email"],
 	.form-deprecated .control-group input[type="number"],
