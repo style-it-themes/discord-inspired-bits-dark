@@ -604,7 +604,8 @@
 	if show_square_avatars {
 		.image-33JSyf, .wrapper-2F3Zv8,
 		.inner-1W0Bkn, .avatarUploaderInner-3UNxY3,
-		.inviteSmallIcon-1-yydW, .avatarHint-1qgaV3 {
+		.inviteSmallIcon-1-yydW, .avatarHint-1qgaV3,
+		.friendsRow-2yicud .icon-3o6xvg {
 			border-radius: 4px !important;
 		}
 		.mask-3OgeRz {
