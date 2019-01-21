@@ -369,6 +369,14 @@
 		left: -3px !important;
 		background: var(--color-2f3136) !important;
 	}
+	/* upstream bug fix gif selector cut off */
+	.result-3w1ZcL {
+		width 210px !important;
+		margin-left: -1px !important;
+	}
+	.autocomplete-1vrmpx .scroller-2FKFPG {
+		overflow-x: hidden !important;
+	}
 	/* end fix */
 	/* end scrollbars */
 	.form-deprecated .control-group input[type="email"],
