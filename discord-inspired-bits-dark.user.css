@@ -18,6 +18,7 @@
 }
 @var checkbox compact_mode_transition "Use hover effect for compact mode" 1 {}
 @var text     transition_delay 		    "Effect timing on hover" 0.7s
+@var checkbox disable_scrollbar       "Show default scroollbar style" 0
 @var text     scrollbars-width 		    "Scrollbars width" 10px
 ==/UserStyle== */
 @-moz-document domain("discordapp.com"), domain("blog.discordapp.com") {
@@ -308,42 +309,56 @@
 		background-color: var(--color-6d6d6d) !important;
 	}
 	/* scrollbars */
-	.track-1JN30G, .thumb-2JwNFC, .emojiPicker-3m1S-j .track-1JN30G,
-	.emojiPicker-3m1S-j .thumb-2JwNFC {
-		border-radius: 0 !important;
-		border: none !important;
-	}
-	if scrollbars-width {
+	if not disable_scrollbar {
+		[class^="chat"], [class*="friends"],
+		[class*="emojiPicker-"], [class*="channels-"] {
+			::-webkit-scrollbar {
+				&-track {
+					background: var(--color-2f3136) !important;
+					border-radius: 0 !important;
+				}
+				&-track-piece {
+					background: var(--color-2f3136) !important;
+				}
+				&-thumb {
+					background: var(--color-5b666d) !important;
+					border-radius: 0 !important;
+				}
+			}
+		}
 		.track-1JN30G, .thumb-2JwNFC, .emojiPicker-3m1S-j .track-1JN30G,
 		.emojiPicker-3m1S-j .thumb-2JwNFC {
-			width: scrollbars-width !important;
+			border-radius: 0 !important;
+			border: none !important;
 		}
-	}
-	.emojiPicker-3m1S-j .thumb-2JwNFC {
-		margin: 1px !important;
-	}
-	div:hover.scroller-wrap .scrollbar .thumb:after,
-	.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d:hover .scrollbar-2rkZSL .thumb-2JwNFC {
-		opacity: 1 !important;
-	}
-	.messagesWrapper-3lZDfY .scrollbar-2rkZSL .track-1JN30G, .scrollbar-2rkZSL .track-1JN30G {
-		border-color: var(--transparent) !important;
-		background: var(--color-2f3136) !important;
-	}
-	.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .track-1JN30G {
-		border-color: var(--transparent) !important;
-		background: var(--color-2f3136) !important;
-	}
-	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
-	.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
-	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
-	.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
-	.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL,
-	.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL .pad-29zQak {
-		background-color: var(--color-2f3136) !important;
-	}
-	.thumb-2JwNFC, .channels-Ie2l6A .thumb-2JwNFC, .membersWrap-2h-GB4 .thumb-2JwNFC {
-		background-color: var(--color-5b666d) !important;
+		if scrollbars-width {
+			.track-1JN30G, .thumb-2JwNFC, .emojiPicker-3m1S-j .track-1JN30G,
+			.emojiPicker-3m1S-j .thumb-2JwNFC {
+				width: scrollbars-width !important;
+			}
+		}
+		.emojiPicker-3m1S-j .thumb-2JwNFC {
+			margin: 1px !important;
+		}
+		.messagesWrapper-3lZDfY .scrollbar-2rkZSL .track-1JN30G, .scrollbar-2rkZSL .track-1JN30G {
+			border-color: var(--transparent) !important;
+			background: var(--color-2f3136) !important;
+		}
+		.messagesWrapper-3lZDfY:hover .scrollbar-2rkZSL .track-1JN30G {
+			border-color: var(--transparent) !important;
+			background: var(--color-2f3136) !important;
+		}
+		.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
+		.scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
+		.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL,
+		.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scrollbar-2rkZSL .pad-29zQak,
+		.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL,
+		.theme-light .scrollerWrap-2lJEkd .scrollbar-2rkZSL .pad-29zQak {
+			background-color: var(--color-2f3136) !important;
+		}
+		.thumb-2JwNFC, .channels-Ie2l6A .thumb-2JwNFC, .membersWrap-2h-GB4 .thumb-2JwNFC {
+			background-color: var(--color-5b666d) !important;
+		}
 	}
 	/* upstream bug fix emoji cut off in Firefox #9 */
 	.emojiPicker-3m1S-j .scroller-3vODG7 {
