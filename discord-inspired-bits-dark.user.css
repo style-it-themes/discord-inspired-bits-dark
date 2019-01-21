@@ -88,8 +88,44 @@
 	.heroHeading-3bVmA3 .headingDefault-1oVaTd,
 	.heroHeading-3bVmA3 .textDefault-1mTLiI,
 	.pageSectionWrapper-3-JP1O p, .theme-dark .inner-zqa7da,
-	.theme-dark .headingDefault-1oVaTd {
+	.theme-dark .headingDefault-1oVaTd, h3.collapsible-sidebar-title,
+	div.article-meta, .article-meta .meta-group li, .article-votes-question,
+	.article-vote-label, .article-more-questions, .article-list-link {
 		color: var(--color-98aab5) !important;
+	}
+	.article-body h3 a {
+		color var(--color-eeeeee) !important;
+	}
+	.article-body h3 a:hover {
+		filter: brightness(90%) !important;
+	}
+	.article-body h3 {
+		color: var(--color-eeeeee) !important;
+		background-color: var(--color-3ca374) !important;
+		border: 2px solid var(--color-43B581) !important;
+	}
+	.article-votes, .article-return-to-top, .article-relatives {
+		border-top: 1px solid var(--color-6d6d6d) !important;
+	}
+	.article-list-item {
+		border-bottom: 1px solid var(--color-6d6d6d) !important;
+	}
+	.article-sidebar a.sidenav-item {
+		color: var(--color-98aab5) !important;
+		border-color: var(--color-4a4d53) !important;
+	}
+	.article-sidebar a.sidenav-item:hover {
+		box-shadow: none !important;
+		color: var(--color-eeeeee) !important;
+	}
+	a.article-sidebar-item {
+		background: var(--color-5b666d) !important;
+		border: 2px solid var(--color-4a4d53)n!important;
+	}
+	a.article-sidebar-item:hover {
+		background: var(--color-7289da) !important;
+		color: var(--color-eeeeee) !important;
+		border: none !important;
 	}
 	.category-grid .flex-item {
 		background-color: var(--color-4a4d53) !important;
@@ -178,9 +214,11 @@
 	.input-3Xdcic::placeholder {
 		color: var(--color-98aab5) !important;
 	}
-	.theme-dark .focused-1En8bG::after, .theme-dark .result-3w1ZcL:hover::after {
-		-webkit-box-shadow: inset 0 0 0 2px var(--color-98aab5), inset 0 0 2px 2px var(--color-2f3136) !important;
-		box-shadow: inset 0 0 0 2px var(--color-98aab5), inset 0 0 2px 2px var(--color-2f3136) !important;
+	.theme-dark .focused-1En8bG:after, .theme-dark .result-3w1ZcL:hover:after {
+		-webkit-box-shadow: inset 0 0 0 2px var(--color-98aab5),
+			inset 0 0 2px 2px var(--color-2f3136) !important;
+		box-shadow: inset 0 0 0 2px var(--color-98aab5),
+			inset 0 0 2px 2px var(--color-2f3136) !important;
 	}
 	.theme-dark .input-1mgnkM, .theme-dark .input-cIJ7To {
 		border-bottom-color: var(--color-98aab5) !important;
@@ -206,7 +244,8 @@
 		border-top: 1px solid var(--color-6d6d6d) !important;
 	}
 	/*log in field*/
-	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI, .fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
+	.fieldInputBrand-3HonQU, .fieldInputDark-2XNsGI,
+	.fieldInputDefault-2q5IHp, .fieldInputGreen-2am23g {
 		color: var(--color-eeeeee) !important;
 	}
 	.theme-dark .textArea-2Spzkt::placeholder {
@@ -262,6 +301,15 @@
 	}
 	.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
 		background-color: var(--color-4a4d53) !important;
+	}
+	.search:before {
+		background-color: var(--color-4a4d53) !important;
+	}
+	input[type="search"] {
+		background-color: var(--color-4a4d53) !important;
+		border-radius: 4px !important;
+		border-color: var(--color-6d6d6d) !important;
+		color: var(--color-eeeeee) !important;
 	}
 	.searchBarInner-1_Tg2R input::placeholder {
 		color: var(--color-eeeeee) !important;
