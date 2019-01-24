@@ -41,7 +41,7 @@
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0, 25%, .6);
 		--transparent: transparent;
-    --scrollbar-width: 10px !important;
+		--scrollbar-width: 10px !important;
 	}
 	@-webkit-keyframes autofill {
 		to {
@@ -117,7 +117,7 @@
 	.my-activities-sub-nav {
 		border-color: var(--color-4a4d53) !important;
 	}
-  .dropdown-menu [role="menuitem"]:hover, [class*="squadDivider-"] {
+	.dropdown-menu [role="menuitem"]:hover, [class*="squadDivider-"] {
 		background: var(--color-4a4d53) !important;
 	}
 	[class*="videoSection-"], [class*="sectionJobs-"], .community-enabled,
@@ -460,22 +460,22 @@
 					border-radius: 0 !important;
 				}
 			}
-    }
-    [class*="emojiPicker-"] ::-webkit-scrollbar,
-    [class*="contentRegion-"] ::-webkit-scrollbar {
-      width: var(--scrollbar-width) !important;
-			  &-track {
-				  background: var(--color-2f3136) !important;
-				  border-radius: 0 !important;
-			  }
-			  &-track-piece {
-			  	background: var(--color-2f3136) !important;
-			  }
-			  &-thumb {
-				  background: var(--color-5b666d) !important;
-				  border-radius: 0 !important;
-			  }
-    }
+		}
+		[class*="emojiPicker-"] ::-webkit-scrollbar,
+		[class*="contentRegion-"] ::-webkit-scrollbar {
+			width: var(--scrollbar-width) !important;
+				&-track {
+					background: var(--color-2f3136) !important;
+					border-radius: 0 !important;
+				}
+				&-track-piece {
+					background: var(--color-2f3136) !important;
+				}
+				&-thumb {
+					background: var(--color-5b666d) !important;
+					border-radius: 0 !important;
+				}
+		}
 		@supports (-moz-user-select: none) {
 			[class*="track-"], [class*="thumb-"],
 			[class*="emojiPicker-"] [class*="track-"],
@@ -784,8 +784,8 @@
 		[class*="wrapper-"][class*="avatarXSmall-"] [class*="inner-"],
 		[class*="avatarUploaderInner-"], [class*="avatarHint"],
 		[class*="friendsRow-"] [class*="icon-"], [class*="tweetAvatar-"],
- 		[class*="inner-"] [class*="listAvatar-"][class*="iconInactive-"],
- 		[class*="inner-"] [class*="listAvatar-"][class*="icon-"],
+		[class*="inner-"] [class*="listAvatar-"][class*="iconInactive-"],
+		[class*="inner-"] [class*="listAvatar-"][class*="icon-"],
 		[class*="wrapper-"][class*="listAvatar-"] [class*="image-"] {
 			border-radius: 4px !important;
 		}
