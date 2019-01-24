@@ -41,6 +41,7 @@
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0, 25%, .6);
 		--transparent: transparent;
+    --scrollbar-width: 10px !important;
 	}
   @-webkit-keyframes autofill {
     to {
@@ -462,6 +463,15 @@
     }
     [class*="emojiPicker-"] ::-webkit-scrollbar {
 			width: 10px !important;
+		@supports (-moz-user-select: none) {
+			[class*="track-"], [class*="thumb-"],
+			[class*="emojiPicker-"] [class*="track-"],
+			[class*="emojiPicker-"] [class*="thumb-"] {
+				width: var(--scrollbar-width) !important;
+			}
+			[class*="slider-"] [class*="track-"] {
+				width: 100% !important;
+			}
 		}
 		[class*="track-"], [class*="thumb-"],
 		[class*="emojiPicker-"] [class*="track-"],
