@@ -8,16 +8,16 @@
 @author       Style-it Themes by: the-j0k3r
  + co-authors https://github.com/style-it-themes/discord-inspired-bits-dark/graphs/contributors
 @preprocessor stylus
-@var checkbox show_download_btn   "Show download app button" 1 {}
-@var checkbox show_store_lib_btns "Show store and library buttons" 1 {}
-@var checkbox show_square_avatars "Show square avatars" 0 {}
-@var checkbox compact_mode        "Compact left sidebar" 0 {}
-@var select   server_sidebar      "Compact right sidebar" {
+@var checkbox show_download_btn       "Show download app button" 1 {}
+@var checkbox show_store_lib_btns     "Show store and library buttons" 1 {}
+@var checkbox show_square_avatars     "Show square avatars" 0 {}
+@var checkbox compact_mode            "Compact left sidebar" 0 {}
+@var select   server_sidebar          "Compact right sidebar" {
 	"On resize": "resize",
 	"Always": "compact"
 }
 @var checkbox compact_mode_transition "Use hover effect for compact mode" 1 {}
-@var text     transition_delay 		    "Effect timing on hover" 0.7s
+@var text     transition_delay        "Effect timing on hover" 0.7s
 @var checkbox disable_scrollbar       "Show default scrollbar style" 0
 ==/UserStyle== */
 @-moz-document domain("discordapp.com"), domain("blog.discordapp.com") {
@@ -41,7 +41,7 @@
 		--color-hover: rgba(192, 192, 192, .35);
 		--color-select: hsla(0, 0, 25%, .6);
 		--transparent: transparent;
-		--scrollbar-width: 10px !important;
+		--scrollbar-width: 10px;
 	}
 	@-webkit-keyframes autofill {
 		to {
@@ -117,7 +117,7 @@
 	.my-activities-sub-nav {
 		border-color: var(--color-4a4d53) !important;
 	}
-	.dropdown-menu [role="menuitem"]:hover, [class*="squadDivider-"] {
+  .dropdown-menu [role="menuitem"]:hover, [class*="squadDivider-"] {
 		background: var(--color-4a4d53) !important;
 	}
 	[class*="videoSection-"], [class*="sectionJobs-"], .community-enabled,
@@ -230,9 +230,10 @@
 		background-image: none !important;
 	}
 	[class*="wumpusShown-"] [class*="wumpusTooltip-"] {
-		background: var(--color-4a4d53) !important;
+		background: var(--color-18191c) !important;
+		color: var(--color-98aab5) !important;
 		&::after {
-			border-color: var(--transparent) var(--color-4a4d53) var(--transparent) var(--transparent) !important;
+			border-color: var(--transparent) var(--color-18191c) var(--transparent) var(--transparent) !important;
 		}
 	}
 	/*Language Dropdowns*/
@@ -273,7 +274,7 @@
 	.theme-dark [class*="regionSelect-"]:hover button,
 	.theme-light [class*="regionSelect-"]:hover [class*="regionSelectInner-"],
 	.theme-light [class*="regionSelect-"]:hover button,
-	.theme-dark .input-cIJ7To:focus {
+	.theme-dark [class*="input-"]:focus {
 		border-color: var(--color-7289da) !important;
 	}
 	.theme-dark [class*="input-"]:not(:focus) {
@@ -366,16 +367,19 @@
 		}
 	}
 	/* chrome align */
-	.emojiButtonHovered-1rWNal:not(*:root), .emojiButtonNormal-TdumYh:not(*:root),
-	.buttons-205you .buttonWrapper-1ZmCpA:not(*:root) {
+	[class*="emojiButtonHovered-"]:not(*:root), [class*="emojiButtonNormal-"]:not(*:root),
+	[class*="buttons-"] [class*="buttonWrapper-"]:not(*:root) {
 		top: 0px !important;
 	}
 	/* firefox align */
-	.emojiButtonHovered-1rWNal, .emojiButtonNormal-TdumYh,
-	.buttons-205you .buttonWrapper-1ZmCpA {
-		top: 1px !important;
+	[class*="emojiButtonHovered-"], [class*="emojiButtonNormal-"],
+	[class*="buttons-"] [class*="buttonWrapper-"] {
+		top: 2px !important;
 	}
-	[class*="messagesPopoutWrap-"] [class*="top-"] [class*="item-"][class*="itemSelected-"] {
+	[class*="messagesPopoutWrap-"] [class*="top-"] [class*="item-"][class*="itemSelected-"],
+	[class*="messagesPopoutWrap-"] [class*="top-"] [class*="item-"]:hover,
+	[class*="tabBarContainer-"] [class*="itemSelected-"],
+	[class*="tabBarContainer-"] [class*="item-"]:hover {
 		border-color: var(--color-7289da) !important;
 	}
 	[class*="emojiPicker-"], [class*="searchBar-"][class*="searchBarLight-"] {
@@ -516,7 +520,8 @@
 		[class*="membersWrap-"] [class*="thumb-"] {
 			background-color: var(--color-5b666d) !important;
 		}
-		[class*="messagesWrapper-"] [class*="scrollbar-"] [class*="track-"] {
+		[class*="messagesWrapper-"] [class*="scrollbar-"] [class*="track-"],
+		[class*="messagesWrapper-"]:hover [class*="scrollbar-"] [class*="track-"] {
 			border-right: 1px solid var(--color-35393e) !important;
 			margin-left: 3px !important;
 		}
@@ -580,7 +585,7 @@
 	.theme-dark [class*="backdrop-"], [class*="premiumPromo-"] {
 		background-color: var(--color-18191c) !important;
 	}
-	.downloadApps-wbBFdZ .platforms-28Rb-3 .platform-iik236 {
+	[class*="downloadApps-"] [class*="platforms-"] [class*="platform-"] {
 		border: 1px solid var(--color-98aab5) !important;
 	}
 	.create-guild-container.deprecated .action {
@@ -748,7 +753,6 @@
 	img[src*="169565d0b5f43d2c5da4dd26bb54b160.svg"],
 	img[src*="8f58e04ab1a6dd3c9798877912c2cb93.svg"],
 	img[src*="dd21835e0b93364676fce48d9e81c609.svg"],
-	.rawEmoji-y8E0FG.icon-3ZzoN7, /* rawEmoji are :tm: :registered: :copyright: replaces img src entries */
 	/* img src above and style background-position/background-size below */
 	[style*="background-position: -440px -220px; background-size: 924px 704px;"],
 	[style*="background-position: -66px -308px; background-size: 924px 704px;"],
