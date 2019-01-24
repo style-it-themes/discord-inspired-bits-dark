@@ -461,8 +461,21 @@
 				}
 			}
     }
-    [class*="emojiPicker-"] ::-webkit-scrollbar {
-			width: 10px !important;
+    [class*="emojiPicker-"] ::-webkit-scrollbar,
+    [class*="contentRegion-"] ::-webkit-scrollbar {
+      width: var(--scrollbar-width) !important;
+			  &-track {
+				  background: var(--color-2f3136) !important;
+				  border-radius: 0 !important;
+			  }
+			  &-track-piece {
+			  	background: var(--color-2f3136) !important;
+			  }
+			  &-thumb {
+				  background: var(--color-5b666d) !important;
+				  border-radius: 0 !important;
+			  }
+    }
 		@supports (-moz-user-select: none) {
 			[class*="track-"], [class*="thumb-"],
 			[class*="emojiPicker-"] [class*="track-"],
