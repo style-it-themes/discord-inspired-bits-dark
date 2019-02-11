@@ -814,6 +814,12 @@
 					width: 240px !important;
 					transition-delay: transition_delay;
 				}
+				/*show notifications/channel controls on hover*/
+				&:hover [class*="content"] > [class*="marginReset"] {
+					max-width: 45px !important;
+					opacity: 1 !important;
+					transition-delay: transition_delay !important;
+				}
 				/*hide usernames until sidebar is activated*/
 				&:hover [class*="channel"] [class*="name"] {
 					margin-left: 0;
