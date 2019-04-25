@@ -27,6 +27,8 @@ Elements covered include:
 
 No more burning your retinas on the white areas and no more squinting to try see dark/light emoji on chat area, autocompleter, or emoji picker.
 
+# NEWS 25/04/2019: After recent Discord updates, I have decided to discontinue support for this style.
+
 ## Sites Covered
 
 | Site Name                                           | Partial              | Full                 |
